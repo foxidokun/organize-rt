@@ -22,7 +22,7 @@ changelog=
 source=(
         "$pkgname-$pkgver.tar.gz::https://gitlab.com/FixFromDarkness/organize-rt/-/archive/$pkgver/organize-rt-$pkgver.tar.gz")
 noextract=()
-md5sums=('skip')
+sha256sums=("9a943b2d274bc78e84233a721a97d631962161a453810820f412e29f0b411cdf")
 validpgpkeys=()
 
 build() {
