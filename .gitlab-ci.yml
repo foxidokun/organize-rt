@@ -10,3 +10,6 @@ test:
   - cargo --version
   - cargo check
 
+cache:
+  paths:
+    - target/
