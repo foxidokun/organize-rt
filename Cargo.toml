@@ -1,0 +1,25 @@
+[package]
+name = "organize-rt"
+version = "0.9.0"
+authors = ["FixFromDarkness <fixfromdarkness@cock.li>"]
+edition = "2018"
+description = "Organize files based on regex (file extensions default)"
+readme = "README.md"
+repository = "https://gitlab.com/FixFromDarkness/organize-rt"
+license = "GPL-3.0"
+keywords = ["cli", "terminal", "files"]
+categories = ["command-line-utilities"]
+include = ["README.md", "src/*", "Cargo.*"]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+structopt = "0.3" #CLI args parsing
+confy = "0.4" #Configuration manager (wrapper on serde (de)serialization)
+serde = { version="1.0", features=["derive"] } 
+serde_json = "1.0"
+human-panic = "1.0" #Human readable panic
+walkdir = "2" # Nice walkdir lib
+regex = "1" #For regex rules
+indicatif = "0.14.0" #CLI progress bar
