@@ -20,7 +20,7 @@ options=()
 install=
 changelog=
 source=(
-        "$pkgname-$pkgver.tar.gz::https://gitlab.com/FixFromDarkness/organize-rt/-/archive/v$pkgver/organize-rt-v$pkgver.tar.gz")
+        "$pkgname-$pkgver.tar.gz::https://gitlab.com/FixFromDarkness/organize-rt/-/archive/$pkgver/organize-rt-$pkgver.tar.gz")
 noextract=()
 md5sums=('skip')
 validpgpkeys=()
