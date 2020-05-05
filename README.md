@@ -1,3 +1,5 @@
+[![pipeline status](https://gitlab.com/FixFromDarkness/organize-rt/badges/master/pipeline.svg)](https://gitlab.com/FixFromDarkness/organize-rt/-/commits/master)
+
 > Organize files based on regex rules, file extensions by default.
 
 # Installation

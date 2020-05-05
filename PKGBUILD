@@ -1,17 +1,12 @@
-# This is an example PKGBUILD file. Use this as a start to creating your own,
-# and remove these comments. For more information, see 'man PKGBUILD'.
-# NOTE: Please fill out the license field for your package! If it is unknown,
-# then please put 'unknown'.
-
 # Maintainer: FixFromDarkness <fixfromdarkness@cock.li>
 pkgname=organize-rt
-pkgver=0.8
+pkgver=0.9
 pkgrel=1
 epoch=
 pkgdesc="Organize file based on regex"
 arch=('any')
-url="https://gitlab.com/"
-license=('GPL')
+url="https://gitlab.com/FixFromDarkness/organize-rt"
+license=('GPLv3')
 groups=()
 depends=()
 makedepends=(cargo)
@@ -20,14 +15,14 @@ optdepends=()
 provides=()
 conflicts=()
 replaces=()
-backup=()
+backup=("~/.config/organize-rt/rules.toml")
 options=()
 install=
 changelog=
 source=(
-        "$pkgname-$pkgver.tar.gz::https://gitlab.com/FixFromDarkness/organize-rt/-/archive/v0.8/organize-rt-v0.8.tar.gz")
+        "$pkgname-$pkgver.tar.gz::https://gitlab.com/FixFromDarkness/organize-rt/-/archive/v$pkgver/organize-rt-v$pkgver.tar.gz")
 noextract=()
-md5sums=(3c1be3929332b535ac054e662fa0202a)
+md5sums=('skip')
 validpgpkeys=()
 
 build() {
