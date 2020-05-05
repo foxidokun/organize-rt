@@ -26,11 +26,11 @@ sha256sums=("9a943b2d274bc78e84233a721a97d631962161a453810820f412e29f0b411cdf")
 validpgpkeys=()
 
 build() {
-	cd $pkgname-v$pkgver
+	cd $pkgname-$pkgver
 	cargo build --release --locked
 }
 
 package() {
-	cd $pkgname-v$pkgver
+	cd $pkgname-$pkgver
 	install -Dm 755 target/release/${pkgname} -t "${pkgdir}/usr/bin/"
 }
