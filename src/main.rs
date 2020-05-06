@@ -29,6 +29,11 @@ struct Options {
     ///Quiet run, empty output
     quiet: bool,
 
+
+    #[structopt(long="dry-run")]
+    ///Prints where the file would move, but does not move
+    dry_run: bool,
+
     #[structopt(short, long, parse(from_os_str))]
     ///Directory to organize
     source: PathBuf,
@@ -91,7 +96,15 @@ fn is_hidden(entry: &DirEntry) -> bool {
 fn main() {
     setup_panic!();
     let options = Options::from_args();
-    let rules: RawRules = confy::load("rules").unwrap();
+
+    //Don't use quiet with verbose flag
+    if options.quiet && options.verbose {
+        println!("Can't use quiet and verbose flags together");
+        return ();
+    }
+
+
+    let rules: RawRules = confy::load("organize-rt").unwrap();
 
     if !options.source.is_dir()  {
         println!("Wrong source directory");
@@ -128,23 +141,26 @@ fn main() {
     
 
     //Creating dirs to move
-    if options.verbose {
+    if options.verbose && !options.dry_run {
         println!("Creating dirs...");
     }
-    create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Audio"))).unwrap();
-    create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Compressed"))).unwrap();
-    create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Garbage"))).unwrap();
-    create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Downloads"))).unwrap();
-    create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Code"))).unwrap();
-    create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Documents"))).unwrap();
-    create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Images"))).unwrap();
-    create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/ISO"))).unwrap();
-    create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Configuration"))).unwrap();
-    create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Encrypted"))).unwrap();
-    create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Video"))).unwrap();
-    create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Unsorted"))).unwrap();
-    create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/REMOVE"))).unwrap();
-    
+
+    if !options.dry_run {
+        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Audio"))).unwrap();
+        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Compressed"))).unwrap();
+        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Garbage"))).unwrap();
+        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Downloads"))).unwrap();
+        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Code"))).unwrap();
+        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Documents"))).unwrap();
+        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Images"))).unwrap();
+        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/ISO"))).unwrap();
+        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Configuration"))).unwrap();
+        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Encrypted"))).unwrap();
+        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Video"))).unwrap();
+        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Unsorted"))).unwrap();
+        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/REMOVE"))).unwrap();
+    }
+
     //Move files
     let progressbar = ProgressBar::new(files.len() as u64);
     for file in files {
@@ -152,20 +168,26 @@ fn main() {
             if regex.is_match(&file.file_name().unwrap().to_str().unwrap()) {
                 let mut file_out = out_dir.clone();
                 file_out.push(file.file_name().unwrap());
-                rename(&file, &file_out).unwrap();
+                if !options.dry_run {
+                    rename(&file, &file_out).unwrap();
+                } else if !options.quiet {
+                    println!("{} -> {}", file.to_str().unwrap(), file_out.to_str().unwrap());
+                }
                 break;
             }
         }
-        if !options.quiet {
+        if !options.quiet  && !options.dry_run {
         progressbar.inc(1);
         }
     }
     
 
     //Remove `REMOVE` dir
-    if options.verbose {
+    if options.verbose && !options.dry_run {
         println!("Removing REMOVE dir...");
     }
     
-    remove_dir(options.output.to_str().unwrap().to_owned() + "/REMOVE").unwrap();
+    if !options.dry_run {
+        remove_dir(options.output.to_str().unwrap().to_owned() + "/REMOVE").unwrap();
+    }
 }
