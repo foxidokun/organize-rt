@@ -37,13 +37,14 @@ $ makepkg -sri
 # Usage
 ```
 $ organize-rt --help
-orginize-rt 0.9.0
+organize-rt 0.9.1
 Tool for organizing files in garbage dirs like 'Downloads'
 
 USAGE:
-    orginize-rt [FLAGS] --output <output> --source <source>
+    organize-rt [FLAGS] --output <output> --source <source>
 
 FLAGS:
+        --dry-run      Prints where the file would move, but does not move
     -h, --help         Prints help information
     -H, --hidden       Include hidden files/directories
     -q, --quiet        Quiet run, empty output
@@ -59,7 +60,7 @@ OPTIONS:
 Recommended mode: `organize-rt -rH`
 
 ## Writing own rules
-Just edit ~/.config/organize-rt/rules.toml (will appear after the first run). File structure:
+Just edit ~/.config/organize-rt/organize-rt.toml (will appear after the first run). File structure:
 ```toml
 rules = [
 #...
@@ -72,7 +73,9 @@ rules = [
 ``` 
 With this rule, file, that match REGEX rule, but __didn't match previous rules__ will move to OUTPUT_DIR/OUTPUT_SUBDIR,
 where OUTPUT_DIR is --output option.
+
 # Like it?
 Star this repo, please.
+
 # Bad code?
 Waiting for your pull request or issue
