@@ -15,7 +15,6 @@ build:
   stage: build
   only:
     - tags
-    - master
   script:
     - cargo build --release --locked
   artifacts:
