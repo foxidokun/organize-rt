@@ -59,7 +59,7 @@ OPTIONS:
 Recommended mode: `organize-rt -rH`
 
 ## Writing own rules
-Just edit ~/.config/organize-rt/rules.toml. File structure:
+Just edit ~/.config/organize-rt/rules.toml (will appear after the first run). File structure:
 ```toml
 rules = [
 #...
@@ -70,7 +70,7 @@ rules = [
 #...
 ]
 ``` 
-With this rule, file, that match REGEX rule, but *didn't match previous rules* will move to OUTPUT_DIR/OUTPUT_SUBDIR,
+With this rule, file, that match REGEX rule, but __didn't match previous rules__ will move to OUTPUT_DIR/OUTPUT_SUBDIR,
 where OUTPUT_DIR is --output option.
 # Like it?
 Star this repo, please.
