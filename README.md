@@ -59,8 +59,24 @@ OPTIONS:
 
 Recommended mode: `organize-rt -rH`
 
+## Example 
+```
+$ organize-rt -s in -o out -rH --dry-run
+in/avi.avi -> out/Video/avi.avi
+in/compressed.tar.bz2 -> out/Compressed/compressed.tar.bz2
+in/ogg.ogg -> out/Audio/ogg.ogg
+in/conf.conf -> out/Configuration/conf.conf
+in/archlinux.iso -> out/ISO/archlinux.iso
+in/compressed.tar.gz -> out/Compressed/compressed.tar.gz
+in/dir/document.docx -> out/Documents/document.docx
+in/dir/image.png -> out/Images/image.png
+in/unsorted.norule -> out/Unsorted/unsorted.norule
+in/.hidden.conf -> out/Configuration/.hidden.conf
+in/mp3.mp3 -> out/Audio/mp3.mp3
+```
+
 ## Writing own rules
-Just edit ~/.config/organize-rt/organize-rt.toml (will appear after the first run). File structure:
+Just edit ~/.config/organize-rt/organize-rt.toml. This file will appear after the first run, you can also use organize-rt.toml.default from this repository. File structure:
 ```toml
 rules = [
 #...

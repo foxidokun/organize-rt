@@ -1,0 +1,6750 @@
+rules = [
+    [
+    '.*\.3GA$',
+    'Audio',
+],
+    [
+    '.*\.AA$',
+    'Audio',
+],
+    [
+    '.*\.AA3$',
+    'Audio',
+],
+    [
+    '.*\.AAC$',
+    'Audio',
+],
+    [
+    '.*\.AAX$',
+    'Audio',
+],
+    [
+    '.*\.ABC$',
+    'Audio',
+],
+    [
+    '.*\.AC3$',
+    'Audio',
+],
+    [
+    '.*\.ACD$',
+    'Audio',
+],
+    [
+    '.*\.ACD-ZIP$',
+    'Audio',
+],
+    [
+    '.*\.ACM$',
+    'Audio',
+],
+    [
+    '.*\.ACT$',
+    'Audio',
+],
+    [
+    '.*\.ADG$',
+    'Audio',
+],
+    [
+    '.*\.ADTS$',
+    'Audio',
+],
+    [
+    '.*\.AFC$',
+    'Audio',
+],
+    [
+    '.*\.AHX$',
+    'Audio',
+],
+    [
+    '.*\.AIF$',
+    'Audio',
+],
+    [
+    '.*\.AIFC$',
+    'Audio',
+],
+    [
+    '.*\.AIFF$',
+    'Audio',
+],
+    [
+    '.*\.AL$',
+    'Audio',
+],
+    [
+    '.*\.AMR$',
+    'Audio',
+],
+    [
+    '.*\.AMZ$',
+    'Audio',
+],
+    [
+    '.*\.AOB$',
+    'Audio',
+],
+    [
+    '.*\.APC$',
+    'Audio',
+],
+    [
+    '.*\.APE$',
+    'Audio',
+],
+    [
+    '.*\.APF$',
+    'Audio',
+],
+    [
+    '.*\.ATRAC$',
+    'Audio',
+],
+    [
+    '.*\.AU$',
+    'Audio',
+],
+    [
+    '.*\.AVR$',
+    'Audio',
+],
+    [
+    '.*\.AWB$',
+    'Audio',
+],
+    [
+    '.*\.AWB$',
+    'Audio',
+],
+    [
+    '.*\.BAP$',
+    'Audio',
+],
+    [
+    '.*\.BMW$',
+    'Audio',
+],
+    [
+    '.*\.CAF$',
+    'Audio',
+],
+    [
+    '.*\.CDA$',
+    'Audio',
+],
+    [
+    '.*\.CFA$',
+    'Audio',
+],
+    [
+    '.*\.CIDB$',
+    'Audio',
+],
+    [
+    '.*\.COPY$',
+    'Audio',
+],
+    [
+    '.*\.CPR$',
+    'Audio',
+],
+    [
+    '.*\.CWP$',
+    'Audio',
+],
+    [
+    '.*\.DAC$',
+    'Audio',
+],
+    [
+    '.*\.DCF$',
+    'Audio',
+],
+    [
+    '.*\.DCM$',
+    'Audio',
+],
+    [
+    '.*\.DCT$',
+    'Audio',
+],
+    [
+    '.*\.DFC$',
+    'Audio',
+],
+    [
+    '.*\.DIG$',
+    'Audio',
+],
+    [
+    '.*\.DSM$',
+    'Audio',
+],
+    [
+    '.*\.DSS$',
+    'Audio',
+],
+    [
+    '.*\.DTS$',
+    'Audio',
+],
+    [
+    '.*\.DTSHD$',
+    'Audio',
+],
+    [
+    '.*\.DVF$',
+    'Audio',
+],
+    [
+    '.*\.EFA$',
+    'Audio',
+],
+    [
+    '.*\.EFE$',
+    'Audio',
+],
+    [
+    '.*\.EFK$',
+    'Audio',
+],
+    [
+    '.*\.EFV$',
+    'Audio',
+],
+    [
+    '.*\.EMD$',
+    'Audio',
+],
+    [
+    '.*\.EMX$',
+    'Audio',
+],
+    [
+    '.*\.ENC$',
+    'Audio',
+],
+    [
+    '.*\.F64$',
+    'Audio',
+],
+    [
+    '.*\.FL$',
+    'Audio',
+],
+    [
+    '.*\.FLAC$',
+    'Audio',
+],
+    [
+    '.*\.FLP$',
+    'Audio',
+],
+    [
+    '.*\.FST$',
+    'Audio',
+],
+    [
+    '.*\.G726$',
+    'Audio',
+],
+    [
+    '.*\.GNT$',
+    'Audio',
+],
+    [
+    '.*\.GPX$',
+    'Audio',
+],
+    [
+    '.*\.GSM$',
+    'Audio',
+],
+    [
+    '.*\.GSM$',
+    'Audio',
+],
+    [
+    '.*\.HMA$',
+    'Audio',
+],
+    [
+    '.*\.HTW$',
+    'Audio',
+],
+    [
+    '.*\.IFF$',
+    'Audio',
+],
+    [
+    '.*\.IKLAX$',
+    'Audio',
+],
+    [
+    '.*\.IMW$',
+    'Audio',
+],
+    [
+    '.*\.IMY$',
+    'Audio',
+],
+    [
+    '.*\.ITS$',
+    'Audio',
+],
+    [
+    '.*\.IVC$',
+    'Audio',
+],
+    [
+    '.*\.K26$',
+    'Audio',
+],
+    [
+    '.*\.KAR$',
+    'Audio',
+],
+    [
+    '.*\.KFN$',
+    'Audio',
+],
+    [
+    '.*\.KOE$',
+    'Audio',
+],
+    [
+    '.*\.KOZ$',
+    'Audio',
+],
+    [
+    '.*\.KOZ$',
+    'Audio',
+],
+    [
+    '.*\.KPL$',
+    'Audio',
+],
+    [
+    '.*\.KTP$',
+    'Audio',
+],
+    [
+    '.*\.LQT$',
+    'Audio',
+],
+    [
+    '.*\.LVP$',
+    'Audio',
+],
+    [
+    '.*\.M3U$',
+    'Audio',
+],
+    [
+    '.*\.M3U8$',
+    'Audio',
+],
+    [
+    '.*\.M4A$',
+    'Audio',
+],
+    [
+    '.*\.M4B$',
+    'Audio',
+],
+    [
+    '.*\.M4P$',
+    'Audio',
+],
+    [
+    '.*\.M4R$',
+    'Audio',
+],
+    [
+    '.*\.MA1$',
+    'Audio',
+],
+    [
+    '.*\.MID$',
+    'Audio',
+],
+    [
+    '.*\.MIDI$',
+    'Audio',
+],
+    [
+    '.*\.MINIUSF$',
+    'Audio',
+],
+    [
+    '.*\.MIO$',
+    'Audio',
+],
+    [
+    '.*\.MKA$',
+    'Audio',
+],
+    [
+    '.*\.MMF$',
+    'Audio',
+],
+    [
+    '.*\.MON$',
+    'Audio',
+],
+    [
+    '.*\.MP2$',
+    'Audio',
+],
+    [
+    '.*\.MP3$',
+    'Audio',
+],
+    [
+    '.*\.MPA$',
+    'Audio',
+],
+    [
+    '.*\.MPC$',
+    'Audio',
+],
+    [
+    '.*\.MPU$',
+    'Audio',
+],
+    [
+    '.*\.MP_$',
+    'Audio',
+],
+    [
+    '.*\.MSV$',
+    'Audio',
+],
+    [
+    '.*\.MT2$',
+    'Audio',
+],
+    [
+    '.*\.MTE$',
+    'Audio',
+],
+    [
+    '.*\.MTP$',
+    'Audio',
+],
+    [
+    '.*\.MUP$',
+    'Audio',
+],
+    [
+    '.*\.MXP4$',
+    'Audio',
+],
+    [
+    '.*\.MZP$',
+    'Audio',
+],
+    [
+    '.*\.NCOR$',
+    'Audio',
+],
+    [
+    '.*\.NKI$',
+    'Audio',
+],
+    [
+    '.*\.NRT$',
+    'Audio',
+],
+    [
+    '.*\.NSA$',
+    'Audio',
+],
+    [
+    '.*\.NTN$',
+    'Audio',
+],
+    [
+    '.*\.NWC$',
+    'Audio',
+],
+    [
+    '.*\.ODM$',
+    'Audio',
+],
+    [
+    '.*\.OGA$',
+    'Audio',
+],
+    [
+    '.*\.OGG$',
+    'Audio',
+],
+    [
+    '.*\.OMA$',
+    'Audio',
+],
+    [
+    '.*\.OMG$',
+    'Audio',
+],
+    [
+    '.*\.OMX$',
+    'Audio',
+],
+    [
+    '.*\.OTS$',
+    'Audio',
+],
+    [
+    '.*\.OVE$',
+    'Audio',
+],
+    [
+    '.*\.PCAST$',
+    'Audio',
+],
+    [
+    '.*\.PEK$',
+    'Audio',
+],
+    [
+    '.*\.PLA$',
+    'Audio',
+],
+    [
+    '.*\.PLS$',
+    'Audio',
+],
+    [
+    '.*\.PNA$',
+    'Audio',
+],
+    [
+    '.*\.PROG$',
+    'Audio',
+],
+    [
+    '.*\.PVC$',
+    'Audio',
+],
+    [
+    '.*\.QCP$',
+    'Audio',
+],
+    [
+    '.*\.R1M$',
+    'Audio',
+],
+    [
+    '.*\.RA$',
+    'Audio',
+],
+    [
+    '.*\.RAM$',
+    'Audio',
+],
+    [
+    '.*\.RAW$',
+    'Audio',
+],
+    [
+    '.*\.RAX$',
+    'Audio',
+],
+    [
+    '.*\.REX$',
+    'Audio',
+],
+    [
+    '.*\.RFL$',
+    'Audio',
+],
+    [
+    '.*\.RIF$',
+    'Audio',
+],
+    [
+    '.*\.RMJ$',
+    'Audio',
+],
+    [
+    '.*\.RNS$',
+    'Audio',
+],
+    [
+    '.*\.RSD$',
+    'Audio',
+],
+    [
+    '.*\.RSO$',
+    'Audio',
+],
+    [
+    '.*\.RTI$',
+    'Audio',
+],
+    [
+    '.*\.RX2$',
+    'Audio',
+],
+    [
+    '.*\.SA1$',
+    'Audio',
+],
+    [
+    '.*\.SBR$',
+    'Audio',
+],
+    [
+    '.*\.SD2$',
+    'Audio',
+],
+    [
+    '.*\.SFA$',
+    'Audio',
+],
+    [
+    '.*\.SGT$',
+    'Audio',
+],
+    [
+    '.*\.SID$',
+    'Audio',
+],
+    [
+    '.*\.SMF$',
+    'Audio',
+],
+    [
+    '.*\.SND$',
+    'Audio',
+],
+    [
+    '.*\.SNG$',
+    'Audio',
+],
+    [
+    '.*\.SNS$',
+    'Audio',
+],
+    [
+    '.*\.SPRG$',
+    'Audio',
+],
+    [
+    '.*\.SSEQ$',
+    'Audio',
+],
+    [
+    '.*\.SSND$',
+    'Audio',
+],
+    [
+    '.*\.SWA$',
+    'Audio',
+],
+    [
+    '.*\.SYH$',
+    'Audio',
+],
+    [
+    '.*\.SZ$',
+    'Audio',
+],
+    [
+    '.*\.TAP$',
+    'Audio',
+],
+    [
+    '.*\.TRM$',
+    'Audio',
+],
+    [
+    '.*\.UL$',
+    'Audio',
+],
+    [
+    '.*\.USF$',
+    'Audio',
+],
+    [
+    '.*\.USFLIB$',
+    'Audio',
+],
+    [
+    '.*\.USM$',
+    'Audio',
+],
+    [
+    '.*\.VAG$',
+    'Audio',
+],
+    [
+    '.*\.VMO$',
+    'Audio',
+],
+    [
+    '.*\.VOI$',
+    'Audio',
+],
+    [
+    '.*\.VOX$',
+    'Audio',
+],
+    [
+    '.*\.VPM$',
+    'Audio',
+],
+    [
+    '.*\.VRF$',
+    'Audio',
+],
+    [
+    '.*\.VY1$',
+    'Audio',
+],
+    [
+    '.*\.VYF$',
+    'Audio',
+],
+    [
+    '.*\.W01$',
+    'Audio',
+],
+    [
+    '.*\.W64$',
+    'Audio',
+],
+    [
+    '.*\.WAV$',
+    'Audio',
+],
+    [
+    '.*\.WMA$',
+    'Audio',
+],
+    [
+    '.*\.WPROJ$',
+    'Audio',
+],
+    [
+    '.*\.WRK$',
+    'Audio',
+],
+    [
+    '.*\.WUS$',
+    'Audio',
+],
+    [
+    '.*\.WUT$',
+    'Audio',
+],
+    [
+    '.*\.WWU$',
+    'Audio',
+],
+    [
+    '.*\.XFS$',
+    'Audio',
+],
+    [
+    '.*\.ZGR$',
+    'Audio',
+],
+    [
+    '.*\.ZVR$',
+    'Audio',
+],
+    [
+    '.*\.002$',
+    'Compressed',
+],
+    [
+    '.*\.7Z$',
+    'Compressed',
+],
+    [
+    '.*\.7ZIP$',
+    'Compressed',
+],
+    [
+    '.*\.A$',
+    'Compressed',
+],
+    [
+    '.*\.A00$',
+    'Compressed',
+],
+    [
+    '.*\.ACE$',
+    'Compressed',
+],
+    [
+    '.*\.ADZ$',
+    'Compressed',
+],
+    [
+    '.*\.AIN$',
+    'Compressed',
+],
+    [
+    '.*\.ALX$',
+    'Compressed',
+],
+    [
+    '.*\.ALZ$',
+    'Compressed',
+],
+    [
+    '.*\.APK$',
+    'Compressed',
+],
+    [
+    '.*\.APP$',
+    'Compressed',
+],
+    [
+    '.*\.APZ$',
+    'Compressed',
+],
+    [
+    '.*\.AR$',
+    'Compressed',
+],
+    [
+    '.*\.ARC$',
+    'Compressed',
+],
+    [
+    '.*\.ARJ$',
+    'Compressed',
+],
+    [
+    '.*\.ASWCS$',
+    'Compressed',
+],
+    [
+    '.*\.ATN$',
+    'Compressed',
+],
+    [
+    '.*\.BA$',
+    'Compressed',
+],
+    [
+    '.*\.BH$',
+    'Compressed',
+],
+    [
+    '.*\.BIX$',
+    'Compressed',
+],
+    [
+    '.*\.BOO$',
+    'Compressed',
+],
+    [
+    '.*\.BUNDLE$',
+    'Compressed',
+],
+    [
+    '.*\.BZ$',
+    'Compressed',
+],
+    [
+    '.*\.BZ2$',
+    'Compressed',
+],
+    [
+    '.*\.BZIP$',
+    'Compressed',
+],
+    [
+    '.*\.BZIP2$',
+    'Compressed',
+],
+    [
+    '.*\.CAR$',
+    'Compressed',
+],
+    [
+    '.*\.CBR$',
+    'Compressed',
+],
+    [
+    '.*\.CBZ$',
+    'Compressed',
+],
+    [
+    '.*\.CEB$',
+    'Compressed',
+],
+    [
+    '.*\.CP9$',
+    'Compressed',
+],
+    [
+    '.*\.CPGZ$',
+    'Compressed',
+],
+    [
+    '.*\.CPIO$',
+    'Compressed',
+],
+    [
+    '.*\.CPT$',
+    'Compressed',
+],
+    [
+    '.*\.DAR$',
+    'Compressed',
+],
+    [
+    '.*\.DD$',
+    'Compressed',
+],
+    [
+    '.*\.DEB$',
+    'Compressed',
+],
+    [
+    '.*\.DGC$',
+    'Compressed',
+],
+    [
+    '.*\.DIST$',
+    'Compressed',
+],
+    [
+    '.*\.EFW$',
+    'Compressed',
+],
+    [
+    '.*\.EMZ$',
+    'Compressed',
+],
+    [
+    '.*\.ETC$',
+    'Compressed',
+],
+    [
+    '.*\.F$',
+    'Compressed',
+],
+    [
+    '.*\.GCA$',
+    'Compressed',
+],
+    [
+    '.*\.GCF$',
+    'Compressed',
+],
+    [
+    '.*\.GZ$',
+    'Compressed',
+],
+    [
+    '.*\.GZI$',
+    'Compressed',
+],
+    [
+    '.*\.GZIP$',
+    'Compressed',
+],
+    [
+    '.*\.HBC$',
+    'Compressed',
+],
+    [
+    '.*\.HBC2$',
+    'Compressed',
+],
+    [
+    '.*\.HBE$',
+    'Compressed',
+],
+    [
+    '.*\.HKI$',
+    'Compressed',
+],
+    [
+    '.*\.HKI1$',
+    'Compressed',
+],
+    [
+    '.*\.HKI2$',
+    'Compressed',
+],
+    [
+    '.*\.HKI3$',
+    'Compressed',
+],
+    [
+    '.*\.ICE$',
+    'Compressed',
+],
+    [
+    '.*\.IIO$',
+    'Compressed',
+],
+    [
+    '.*\.IPK$',
+    'Compressed',
+],
+    [
+    '.*\.J$',
+    'Compressed',
+],
+    [
+    '.*\.JGZ$',
+    'Compressed',
+],
+    [
+    '.*\.KGB$',
+    'Compressed',
+],
+    [
+    '.*\.LBR$',
+    'Compressed',
+],
+    [
+    '.*\.LHA$',
+    'Compressed',
+],
+    [
+    '.*\.LQR$',
+    'Compressed',
+],
+    [
+    '.*\.LZ$',
+    'Compressed',
+],
+    [
+    '.*\.LZH$',
+    'Compressed',
+],
+    [
+    '.*\.LZM$',
+    'Compressed',
+],
+    [
+    '.*\.LZMA$',
+    'Compressed',
+],
+    [
+    '.*\.LZO$',
+    'Compressed',
+],
+    [
+    '.*\.LZX$',
+    'Compressed',
+],
+    [
+    '.*\.MINT$',
+    'Compressed',
+],
+    [
+    '.*\.MPKG$',
+    'Compressed',
+],
+    [
+    '.*\.MZP$',
+    'Compressed',
+],
+    [
+    '.*\.MZZ$',
+    'Compressed',
+],
+    [
+    '.*\.NAR$',
+    'Compressed',
+],
+    [
+    '.*\.NSIS$',
+    'Compressed',
+],
+    [
+    '.*\.OB$$',
+    'Compressed',
+],
+    [
+    '.*\.ODEX$',
+    'Compressed',
+],
+    [
+    '.*\.PACKAGE$',
+    'Compressed',
+],
+    [
+    '.*\.PAQ6$',
+    'Compressed',
+],
+    [
+    '.*\.PAQ7$',
+    'Compressed',
+],
+    [
+    '.*\.PAQ8$',
+    'Compressed',
+],
+    [
+    '.*\.PAR2$',
+    'Compressed',
+],
+    [
+    '.*\.PARTIMG$',
+    'Compressed',
+],
+    [
+    '.*\.PEA$',
+    'Compressed',
+],
+    [
+    '.*\.PI$$',
+    'Compressed',
+],
+    [
+    '.*\.PIM$',
+    'Compressed',
+],
+    [
+    '.*\.PIT$',
+    'Compressed',
+],
+    [
+    '.*\.PIZ$',
+    'Compressed',
+],
+    [
+    '.*\.PKG$',
+    'Compressed',
+],
+    [
+    '.*\.PROPDESC$',
+    'Compressed',
+],
+    [
+    '.*\.PTH$',
+    'Compressed',
+],
+    [
+    '.*\.PUP$',
+    'Compressed',
+],
+    [
+    '.*\.PWA$',
+    'Compressed',
+],
+    [
+    '.*\.PZIP$',
+    'Compressed',
+],
+    [
+    '.*\.QDA$',
+    'Compressed',
+],
+    [
+    '.*\.QL$$',
+    'Compressed',
+],
+    [
+    '.*\.R0$',
+    'Compressed',
+],
+    [
+    '.*\.R00$',
+    'Compressed',
+],
+    [
+    '.*\.R30$',
+    'Compressed',
+],
+    [
+    '.*\.RAR$',
+    'Compressed',
+],
+    [
+    '.*\.RK$',
+    'Compressed',
+],
+    [
+    '.*\.RNC$',
+    'Compressed',
+],
+    [
+    '.*\.RPM$',
+    'Compressed',
+],
+    [
+    '.*\.RTE$',
+    'Compressed',
+],
+    [
+    '.*\.RZ$',
+    'Compressed',
+],
+    [
+    '.*\.RZS$',
+    'Compressed',
+],
+    [
+    '.*\.S00$',
+    'Compressed',
+],
+    [
+    '.*\.SBU$',
+    'Compressed',
+],
+    [
+    '.*\.SEA$',
+    'Compressed',
+],
+    [
+    '.*\.SEG1$',
+    'Compressed',
+],
+    [
+    '.*\.SEN$',
+    'Compressed',
+],
+    [
+    '.*\.SFARK$',
+    'Compressed',
+],
+    [
+    '.*\.SHAR$',
+    'Compressed',
+],
+    [
+    '.*\.SIS$',
+    'Compressed',
+],
+    [
+    '.*\.SISX$',
+    'Compressed',
+],
+    [
+    '.*\.SIT$',
+    'Compressed',
+],
+    [
+    '.*\.SITX$',
+    'Compressed',
+],
+    [
+    '.*\.SQX$',
+    'Compressed',
+],
+    [
+    '.*\.TAF$',
+    'Compressed',
+],
+    [
+    '.*\.TAR.GZ$',
+    'Compressed',
+],
+    [
+    '.*\.TBZ2$',
+    'Compressed',
+],
+    [
+    '.*\.TGZ$',
+    'Compressed',
+],
+    [
+    '.*\.TLZ$',
+    'Compressed',
+],
+    [
+    '.*\.TLZMA$',
+    'Compressed',
+],
+    [
+    '.*\.UC2$',
+    'Compressed',
+],
+    [
+    '.*\.UHA$',
+    'Compressed',
+],
+    [
+    '.*\.UU$',
+    'Compressed',
+],
+    [
+    '.*\.VOL$',
+    'Compressed',
+],
+    [
+    '.*\.VSI$',
+    'Compressed',
+],
+    [
+    '.*\.WBA$',
+    'Compressed',
+],
+    [
+    '.*\.WIM$',
+    'Compressed',
+],
+    [
+    '.*\.WOT$',
+    'Compressed',
+],
+    [
+    '.*\.XEF$',
+    'Compressed',
+],
+    [
+    '.*\.XEZ$',
+    'Compressed',
+],
+    [
+    '.*\.XMCDZ$',
+    'Compressed',
+],
+    [
+    '.*\.XPI$',
+    'Compressed',
+],
+    [
+    '.*\.Z$',
+    'Compressed',
+],
+    [
+    '.*\.Z01$',
+    'Compressed',
+],
+    [
+    '.*\.ZCP$',
+    'Compressed',
+],
+    [
+    '.*\.ZFSENDTOTARGET$',
+    'Compressed',
+],
+    [
+    '.*\.ZIP$',
+    'Compressed',
+],
+    [
+    '.*\.ZIPX$',
+    'Compressed',
+],
+    [
+    '.*\.ZIX$',
+    'Compressed',
+],
+    [
+    '.*\.ZOO$',
+    'Compressed',
+],
+    [
+    '.*\.ZPI$',
+    'Compressed',
+],
+    [
+    '.*\.ZZ$',
+    'Compressed',
+],
+    [
+    '.*\.TMP$',
+    'Garbage',
+],
+    [
+    '.*\.LOG$',
+    'Garbage',
+],
+    [
+    '.*\.TEMP$',
+    'Garbage',
+],
+    [
+    '.*\.PART$',
+    'Downloads',
+],
+    [
+    '.*\.TORRENT$',
+    'Downloads',
+],
+    [
+    '.*\.C$',
+    'Code',
+],
+    [
+    '.*\.CS$',
+    'Code',
+],
+    [
+    '.*\.M$',
+    'Code',
+],
+    [
+    '.*\.JAVA$',
+    'Code',
+],
+    [
+    '.*\.CAPROJ$',
+    'Code',
+],
+    [
+    '.*\.PLAYGROUND$',
+    'Code',
+],
+    [
+    '.*\.RBC$',
+    'Code',
+],
+    [
+    '.*\.MFA$',
+    'Code',
+],
+    [
+    '.*\.IDB$',
+    'Code',
+],
+    [
+    '.*\.FSPROJ$',
+    'Code',
+],
+    [
+    '.*\.APPXBUNDLE$',
+    'Code',
+],
+    [
+    '.*\.XQ$',
+    'Code',
+],
+    [
+    '.*\.PBJ$',
+    'Code',
+],
+    [
+    '.*\.MSHC$',
+    'Code',
+],
+    [
+    '.*\.BET$',
+    'Code',
+],
+    [
+    '.*\.VBX$',
+    'Code',
+],
+    [
+    '.*\.PROTO$',
+    'Code',
+],
+    [
+    '.*\.PWN$',
+    'Code',
+],
+    [
+    '.*\.BLUEJ$',
+    'Code',
+],
+    [
+    '.*\.COD$',
+    'Code',
+],
+    [
+    '.*\.YPR$',
+    'Code',
+],
+    [
+    '.*\.CS$',
+    'Code',
+],
+    [
+    '.*\.CAPX$',
+    'Code',
+],
+    [
+    '.*\.LGO$',
+    'Code',
+],
+    [
+    '.*\.VBPROJ$',
+    'Code',
+],
+    [
+    '.*\.ERL$',
+    'Code',
+],
+    [
+    '.*\.VBP$',
+    'Code',
+],
+    [
+    '.*\.ICONSET$',
+    'Code',
+],
+    [
+    '.*\.MSS$',
+    'Code',
+],
+    [
+    '.*\.BBC$',
+    'Code',
+],
+    [
+    '.*\.LBS$',
+    'Code',
+],
+    [
+    '.*\.XAMLX$',
+    'Code',
+],
+    [
+    '.*\.XCDATAMODELD$',
+    'Code',
+],
+    [
+    '.*\.HAML$',
+    'Code',
+],
+    [
+    '.*\.CLW$',
+    'Code',
+],
+    [
+    '.*\.MSHI$',
+    'Code',
+],
+    [
+    '.*\.DGML$',
+    'Code',
+],
+    [
+    '.*\.LDS$',
+    'Code',
+],
+    [
+    '.*\.NUSPEC$',
+    'Code',
+],
+    [
+    '.*\.PBXBTREE$',
+    'Code',
+],
+    [
+    '.*\.WDW$',
+    'Code',
+],
+    [
+    '.*\.UI$',
+    'Code',
+],
+    [
+    '.*\.CLASS$',
+    'Code',
+],
+    [
+    '.*\.HPP$',
+    'Code',
+],
+    [
+    '.*\.SB$',
+    'Code',
+],
+    [
+    '.*\.CD$',
+    'Code',
+],
+    [
+    '.*\.MF$',
+    'Code',
+],
+    [
+    '.*\.XAP$',
+    'Code',
+],
+    [
+    '.*\.SLN$',
+    'Code',
+],
+    [
+    '.*\.QPR$',
+    'Code',
+],
+    [
+    '.*\.ISE$',
+    'Code',
+],
+    [
+    '.*\.TRX$',
+    'Code',
+],
+    [
+    '.*\.B$',
+    'Code',
+],
+    [
+    '.*\.ML$',
+    'Code',
+],
+    [
+    '.*\.MXML$',
+    'Code',
+],
+    [
+    '.*\.KDEVPRJ$',
+    'Code',
+],
+    [
+    '.*\.GMX$',
+    'Code',
+],
+    [
+    '.*\.ARSC$',
+    'Code',
+],
+    [
+    '.*\.CSPROJ$',
+    'Code',
+],
+    [
+    '.*\.LUA$',
+    'Code',
+],
+    [
+    '.*\.APPX$',
+    'Code',
+],
+    [
+    '.*\.GMK$',
+    'Code',
+],
+    [
+    '.*\.GSPROJ$',
+    'Code',
+],
+    [
+    '.*\.FBP$',
+    'Code',
+],
+    [
+    '.*\.DCP$',
+    'Code',
+],
+    [
+    '.*\.CPP$',
+    'Code',
+],
+    [
+    '.*\.SUO$',
+    'Code',
+],
+    [
+    '.*\.NUPKG$',
+    'Code',
+],
+    [
+    '.*\.YML$',
+    'Code',
+],
+    [
+    '.*\.MARKDOWN$',
+    'Code',
+],
+    [
+    '.*\.MPX$',
+    'Code',
+],
+    [
+    '.*\.PAS$',
+    'Code',
+],
+    [
+    '.*\.PY$',
+    'Code',
+],
+    [
+    '.*\.MD$',
+    'Code',
+],
+    [
+    '.*\.STORYBOARD$',
+    'Code',
+],
+    [
+    '.*\.FPM$',
+    'Code',
+],
+    [
+    '.*\.PATCH$',
+    'Code',
+],
+    [
+    '.*\.O$',
+    'Code',
+],
+    [
+    '.*\.JAVA$',
+    'Code',
+],
+    [
+    '.*\.FTL$',
+    'Code',
+],
+    [
+    '.*\.DEX$',
+    'Code',
+],
+    [
+    '.*\.Y$',
+    'Code',
+],
+    [
+    '.*\.RES$',
+    'Code',
+],
+    [
+    '.*\.SWIFT$',
+    'Code',
+],
+    [
+    '.*\.SWC$',
+    'Code',
+],
+    [
+    '.*\.VDPROJ$',
+    'Code',
+],
+    [
+    '.*\.NIB$',
+    'Code',
+],
+    [
+    '.*\.PB$',
+    'Code',
+],
+    [
+    '.*\.TARGETS$',
+    'Code',
+],
+    [
+    '.*\.S$',
+    'Code',
+],
+    [
+    '.*\.MO$',
+    'Code',
+],
+    [
+    '.*\.PO$',
+    'Code',
+],
+    [
+    '.*\.INO$',
+    'Code',
+],
+    [
+    '.*\.ABC$',
+    'Code',
+],
+    [
+    '.*\.OCX$',
+    'Code',
+],
+    [
+    '.*\.SH$',
+    'Code',
+],
+    [
+    '.*\.FLA$',
+    'Code',
+],
+    [
+    '.*\.FOR$',
+    'Code',
+],
+    [
+    '.*\.YMP$',
+    'Code',
+],
+    [
+    '.*\.SWD$',
+    'Code',
+],
+    [
+    '.*\.DPKW$',
+    'Code',
+],
+    [
+    '.*\.APA$',
+    'Code',
+],
+    [
+    '.*\.DGSL$',
+    'Code',
+],
+    [
+    '.*\.WIXMST$',
+    'Code',
+],
+    [
+    '.*\.CCN$',
+    'Code',
+],
+    [
+    '.*\.TEXTFACTORY$',
+    'Code',
+],
+    [
+    '.*\.GORM$',
+    'Code',
+],
+    [
+    '.*\.IWS$',
+    'Code',
+],
+    [
+    '.*\.GITATTRIBUTES$',
+    'Code',
+],
+    [
+    '.*\.MYAPP$',
+    'Code',
+],
+    [
+    '.*\.TLD$',
+    'Code',
+],
+    [
+    '.*\.LXSPROJ$',
+    'Code',
+],
+    [
+    '.*\.NED$',
+    'Code',
+],
+    [
+    '.*\.KDEVELOP$',
+    'Code',
+],
+    [
+    '.*\.TK$',
+    'Code',
+],
+    [
+    '.*\.OCA$',
+    'Code',
+],
+    [
+    '.*\.ILK$',
+    'Code',
+],
+    [
+    '.*\.RODL$',
+    'Code',
+],
+    [
+    '.*\.DPROJ$',
+    'Code',
+],
+    [
+    '.*\.DCPROJ$',
+    'Code',
+],
+    [
+    '.*\.GFAR$',
+    'Code',
+],
+    [
+    '.*\.GLD$',
+    'Code',
+],
+    [
+    '.*\.WIQ$',
+    'Code',
+],
+    [
+    '.*\.VTM$',
+    'Code',
+],
+    [
+    '.*\.SDEF$',
+    'Code',
+],
+    [
+    '.*\.VDP$',
+    'Code',
+],
+    [
+    '.*\.FSX$',
+    'Code',
+],
+    [
+    '.*\.MSIX$',
+    'Code',
+],
+    [
+    '.*\.RESX$',
+    'Code',
+],
+    [
+    '.*\.GROUPPROJ$',
+    'Code',
+],
+    [
+    '.*\.NLS$',
+    'Code',
+],
+    [
+    '.*\.VSMACROS$',
+    'Code',
+],
+    [
+    '.*\.GS$',
+    'Code',
+],
+    [
+    '.*\.VCPROJ$',
+    'Code',
+],
+    [
+    '.*\.RES$',
+    'Code',
+],
+    [
+    '.*\.VSZ$',
+    'Code',
+],
+    [
+    '.*\.TESTRUNCONFIG$',
+    'Code',
+],
+    [
+    '.*\.EDMX$',
+    'Code',
+],
+    [
+    '.*\.NCB$',
+    'Code',
+],
+    [
+    '.*\.SQLPROJ$',
+    'Code',
+],
+    [
+    '.*\.RBW$',
+    'Code',
+],
+    [
+    '.*\.REFRESH$',
+    'Code',
+],
+    [
+    '.*\.FXPL$',
+    'Code',
+],
+    [
+    '.*\.ANE$',
+    'Code',
+],
+    [
+    '.*\.BDSPROJ$',
+    'Code',
+],
+    [
+    '.*\.ASVF$',
+    'Code',
+],
+    [
+    '.*\.XCAPPDATA$',
+    'Code',
+],
+    [
+    '.*\.WSC$',
+    'Code',
+],
+    [
+    '.*\.PBG$',
+    'Code',
+],
+    [
+    '.*\.LBI$',
+    'Code',
+],
+    [
+    '.*\.PIKA$',
+    'Code',
+],
+    [
+    '.*\.ENTITLEMENTS$',
+    'Code',
+],
+    [
+    '.*\.RESOURCES$',
+    'Code',
+],
+    [
+    '.*\.VB$',
+    'Code',
+],
+    [
+    '.*\.BPL$',
+    'Code',
+],
+    [
+    '.*\.XSD$',
+    'Code',
+],
+    [
+    '.*\.NK$',
+    'Code',
+],
+    [
+    '.*\.HS$',
+    'Code',
+],
+    [
+    '.*\.ASM$',
+    'Code',
+],
+    [
+    '.*\.PYW$',
+    'Code',
+],
+    [
+    '.*\.DEF$',
+    'Code',
+],
+    [
+    '.*\.C$',
+    'Code',
+],
+    [
+    '.*\.DOX$',
+    'Code',
+],
+    [
+    '.*\.RPY$',
+    'Code',
+],
+    [
+    '.*\.FS$',
+    'Code',
+],
+    [
+    '.*\.DPR$',
+    'Code',
+],
+    [
+    '.*\.DMD$',
+    'Code',
+],
+    [
+    '.*\.VCXPROJ$',
+    'Code',
+],
+    [
+    '.*\.EX$',
+    'Code',
+],
+    [
+    '.*\.GEM$',
+    'Code',
+],
+    [
+    '.*\.D$',
+    'Code',
+],
+    [
+    '.*\.DTD$',
+    'Code',
+],
+    [
+    '.*\.MK$',
+    'Code',
+],
+    [
+    '.*\.RC$',
+    'Code',
+],
+    [
+    '.*\.ALB$',
+    'Code',
+],
+    [
+    '.*\.ADS$',
+    'Code',
+],
+    [
+    '.*\.BAS$',
+    'Code',
+],
+    [
+    '.*\.PL$',
+    'Code',
+],
+    [
+    '.*\.R$',
+    'Code',
+],
+    [
+    '.*\.SYM$',
+    'Code',
+],
+    [
+    '.*\.NXC$',
+    'Code',
+],
+    [
+    '.*\.LNT$',
+    'Code',
+],
+    [
+    '.*\.SMALI$',
+    'Code',
+],
+    [
+    '.*\.SO$',
+    'Code',
+],
+    [
+    '.*\.CTP$',
+    'Code',
+],
+    [
+    '.*\.SSI$',
+    'Code',
+],
+    [
+    '.*\.CP$',
+    'Code',
+],
+    [
+    '.*\.FRX$',
+    'Code',
+],
+    [
+    '.*\.RUL$',
+    'Code',
+],
+    [
+    '.*\.OMO$',
+    'Code',
+],
+    [
+    '.*\.SMA$',
+    'Code',
+],
+    [
+    '.*\.IPR$',
+    'Code',
+],
+    [
+    '.*\.FXML$',
+    'Code',
+],
+    [
+    '.*\.XT$',
+    'Code',
+],
+    [
+    '.*\.PPC$',
+    'Code',
+],
+    [
+    '.*\.FXC$',
+    'Code',
+],
+    [
+    '.*\.RDLC$',
+    'Code',
+],
+    [
+    '.*\.ASI$',
+    'Code',
+],
+    [
+    '.*\.VHD$',
+    'Code',
+],
+    [
+    '.*\.SCC$',
+    'Code',
+],
+    [
+    '.*\.DIFF$',
+    'Code',
+],
+    [
+    '.*\.REXX$',
+    'Code',
+],
+    [
+    '.*\.WORKSPACE$',
+    'Code',
+],
+    [
+    '.*\.CXP$',
+    'Code',
+],
+    [
+    '.*\.T$',
+    'Code',
+],
+    [
+    '.*\.IML$',
+    'Code',
+],
+    [
+    '.*\.APPXUPLOAD$',
+    'Code',
+],
+    [
+    '.*\.CSX$',
+    'Code',
+],
+    [
+    '.*\.DBPROJ$',
+    'Code',
+],
+    [
+    '.*\.PBXUSER$',
+    'Code',
+],
+    [
+    '.*\.CSP$',
+    'Code',
+],
+    [
+    '.*\.F$',
+    'Code',
+],
+    [
+    '.*\.MM$',
+    'Code',
+],
+    [
+    '.*\.TESTSETTINGS$',
+    'Code',
+],
+    [
+    '.*\.PBK$',
+    'Code',
+],
+    [
+    '.*\.JSPF$',
+    'Code',
+],
+    [
+    '.*\.PYD$',
+    'Code',
+],
+    [
+    '.*\.OCTEST$',
+    'Code',
+],
+    [
+    '.*\.HH$',
+    'Code',
+],
+    [
+    '.*\.AWK$',
+    'Code',
+],
+    [
+    '.*\.HBS$',
+    'Code',
+],
+    [
+    '.*\.CBP$',
+    'Code',
+],
+    [
+    '.*\.ASC$',
+    'Code',
+],
+    [
+    '.*\.AS$',
+    'Code',
+],
+    [
+    '.*\.PAS$',
+    'Code',
+],
+    [
+    '.*\.IPCH$',
+    'Code',
+],
+    [
+    '.*\.L$',
+    'Code',
+],
+    [
+    '.*\.TT$',
+    'Code',
+],
+    [
+    '.*\.H$',
+    'Code',
+],
+    [
+    '.*\.CU$',
+    'Code',
+],
+    [
+    '.*\.XCWORKSPACE$',
+    'Code',
+],
+    [
+    '.*\.W$',
+    'Code',
+],
+    [
+    '.*\.IDL$',
+    'Code',
+],
+    [
+    '.*\.FRAMEWORK$',
+    'Code',
+],
+    [
+    '.*\.PM$',
+    'Code',
+],
+    [
+    '.*\.VM$',
+    'Code',
+],
+    [
+    '.*\.AUTOPLAY$',
+    'Code',
+],
+    [
+    '.*\.RB$',
+    'Code',
+],
+    [
+    '.*\.YAML$',
+    'Code',
+],
+    [
+    '.*\.I$',
+    'Code',
+],
+    [
+    '.*\.CC$',
+    'Code',
+],
+    [
+    '.*\.RSRC$',
+    'Code',
+],
+    [
+    '.*\.RS$',
+    'Code',
+],
+    [
+    '.*\.SC$',
+    'Code',
+],
+    [
+    '.*\.APS$',
+    'Code',
+],
+    [
+    '.*\.ISM$',
+    'Code',
+],
+    [
+    '.*\.CDF$',
+    'Code',
+],
+    [
+    '.*\.M$',
+    'Code',
+],
+    [
+    '.*\.NVV$',
+    'Code',
+],
+    [
+    '.*\.PYX$',
+    'Code',
+],
+    [
+    '.*\.PH$',
+    'Code',
+],
+    [
+    '.*\.DSGM$',
+    'Code',
+],
+    [
+    '.*\.IWB$',
+    'Code',
+],
+    [
+    '.*\.XCCONFIG$',
+    'Code',
+],
+    [
+    '.*\.SLTNG$',
+    'Code',
+],
+    [
+    '.*\.XPP$',
+    'Code',
+],
+    [
+    '.*\.JSFL$',
+    'Code',
+],
+    [
+    '.*\.MV$',
+    'Code',
+],
+    [
+    '.*\.FSSCRIPT$',
+    'Code',
+],
+    [
+    '.*\.V$',
+    'Code',
+],
+    [
+    '.*\.PRO$',
+    'Code',
+],
+    [
+    '.*\.ERB$',
+    'Code',
+],
+    [
+    '.*\.WDL$',
+    'Code',
+],
+    [
+    '.*\.IPR$',
+    'Code',
+],
+    [
+    '.*\.PTL$',
+    'Code',
+],
+    [
+    '.*\.AGI$',
+    'Code',
+],
+    [
+    '.*\.XAML$',
+    'Code',
+],
+    [
+    '.*\.LTB$',
+    'Code',
+],
+    [
+    '.*\.VBG$',
+    'Code',
+],
+    [
+    '.*\.MRT$',
+    'Code',
+],
+    [
+    '.*\.BB$',
+    'Code',
+],
+    [
+    '.*\.WSP$',
+    'Code',
+],
+    [
+    '.*\.DPL$',
+    'Code',
+],
+    [
+    '.*\.INC$',
+    'Code',
+],
+    [
+    '.*\.HXX$',
+    'Code',
+],
+    [
+    '.*\.OWL$',
+    'Code',
+],
+    [
+    '.*\.CXX$',
+    'Code',
+],
+    [
+    '.*\.NBC$',
+    'Code',
+],
+    [
+    '.*\.M$',
+    'Code',
+],
+    [
+    '.*\.CP$',
+    'Code',
+],
+    [
+    '.*\.PKGDEF$',
+    'Code',
+],
+    [
+    '.*\.SRC$',
+    'Code',
+],
+    [
+    '.*\.CBL$',
+    'Code',
+],
+    [
+    '.*\.GCH$',
+    'Code',
+],
+    [
+    '.*\.LIVECODE$',
+    'Code',
+],
+    [
+    '.*\.SUP$',
+    'Code',
+],
+    [
+    '.*\.HAL$',
+    'Code',
+],
+    [
+    '.*\.PRI$',
+    'Code',
+],
+    [
+    '.*\.PBXPROJ$',
+    'Code',
+],
+    [
+    '.*\.ASM$',
+    'Code',
+],
+    [
+    '.*\.WXS$',
+    'Code',
+],
+    [
+    '.*\.MSHA$',
+    'Code',
+],
+    [
+    '.*\.EDML$',
+    'Code',
+],
+    [
+    '.*\.SUD$',
+    'Code',
+],
+    [
+    '.*\.SS$',
+    'Code',
+],
+    [
+    '.*\.XOML$',
+    'Code',
+],
+    [
+    '.*\.VSSSCC$',
+    'Code',
+],
+    [
+    '.*\.PCP$',
+    'Code',
+],
+    [
+    '.*\.FORTH$',
+    'Code',
+],
+    [
+    '.*\.CLS$',
+    'Code',
+],
+    [
+    '.*\.MCP$',
+    'Code',
+],
+    [
+    '.*\.LISP$',
+    'Code',
+],
+    [
+    '.*\.EXP$',
+    'Code',
+],
+    [
+    '.*\.VC$',
+    'Code',
+],
+    [
+    '.*\.V$',
+    'Code',
+],
+    [
+    '.*\.TWIG$',
+    'Code',
+],
+    [
+    '.*\.BSC$',
+    'Code',
+],
+    [
+    '.*\.DBML$',
+    'Code',
+],
+    [
+    '.*\.PL$',
+    'Code',
+],
+    [
+    '.*\.PDE$',
+    'Code',
+],
+    [
+    '.*\.POT$',
+    'Code',
+],
+    [
+    '.*\.SAS$',
+    'Code',
+],
+    [
+    '.*\.LICENSES$',
+    'Code',
+],
+    [
+    '.*\.PLC$',
+    'Code',
+],
+    [
+    '.*\.PLI$',
+    'Code',
+],
+    [
+    '.*\.IST$',
+    'Code',
+],
+    [
+    '.*\.NW$',
+    'Code',
+],
+    [
+    '.*\.IDT$',
+    'Code',
+],
+    [
+    '.*\.UML$',
+    'Code',
+],
+    [
+    '.*\.MER$',
+    'Code',
+],
+    [
+    '.*\.A$',
+    'Code',
+],
+    [
+    '.*\.JIC$',
+    'Code',
+],
+    [
+    '.*\.INL$',
+    'Code',
+],
+    [
+    '.*\.KPL$',
+    'Code',
+],
+    [
+    '.*\.DOB$',
+    'Code',
+],
+    [
+    '.*\.CSI$',
+    'Code',
+],
+    [
+    '.*\.CTL$',
+    'Code',
+],
+    [
+    '.*\.CTXT$',
+    'Code',
+],
+    [
+    '.*\.HPF$',
+    'Code',
+],
+    [
+    '.*\.RESW$',
+    'Code',
+],
+    [
+    '.*\.NSI$',
+    'Code',
+],
+    [
+    '.*\.PXD$',
+    'Code',
+],
+    [
+    '.*\.GITIGNORE$',
+    'Code',
+],
+    [
+    '.*\.BBPROJECT$',
+    'Code',
+],
+    [
+    '.*\.VSPS$',
+    'Code',
+],
+    [
+    '.*\.WDGTPROJ$',
+    'Code',
+],
+    [
+    '.*\.WIXLIB$',
+    'Code',
+],
+    [
+    '.*\.XCSNAPSHOTS$',
+    'Code',
+],
+    [
+    '.*\.LUCIDSNIPPET$',
+    'Code',
+],
+    [
+    '.*\.TMPROJ$',
+    'Code',
+],
+    [
+    '.*\.WIXOUT$',
+    'Code',
+],
+    [
+    '.*\.NSH$',
+    'Code',
+],
+    [
+    '.*\.NEKO$',
+    'Code',
+],
+    [
+    '.*\.TMLANGUAGE$',
+    'Code',
+],
+    [
+    '.*\.XQM$',
+    'Code',
+],
+    [
+    '.*\.PKGUNDEF$',
+    'Code',
+],
+    [
+    '.*\.EXW$',
+    'Code',
+],
+    [
+    '.*\.PRI$',
+    'Code',
+],
+    [
+    '.*\.XQL$',
+    'Code',
+],
+    [
+    '.*\.JCP$',
+    'Code',
+],
+    [
+    '.*\.WIXPDB$',
+    'Code',
+],
+    [
+    '.*\.FTN$',
+    'Code',
+],
+    [
+    '.*\.NQC$',
+    'Code',
+],
+    [
+    '.*\.WDGT$',
+    'Code',
+],
+    [
+    '.*\.VSPX$',
+    'Code',
+],
+    [
+    '.*\.CCGAME$',
+    'Code',
+],
+    [
+    '.*\.VDM$',
+    'Code',
+],
+    [
+    '.*\.ADDIN$',
+    'Code',
+],
+    [
+    '.*\.MOM$',
+    'Code',
+],
+    [
+    '.*\.LICX$',
+    'Code',
+],
+    [
+    '.*\.BPG$',
+    'Code',
+],
+    [
+    '.*\.GMO$',
+    'Code',
+],
+    [
+    '.*\.VSPSCC$',
+    'Code',
+],
+    [
+    '.*\.PLE$',
+    'Code',
+],
+    [
+    '.*\.PRG$',
+    'Code',
+],
+    [
+    '.*\.HAS$',
+    'Code',
+],
+    [
+    '.*\.TUR$',
+    'Code',
+],
+    [
+    '.*\.PJX$',
+    'Code',
+],
+    [
+    '.*\.VBZ$',
+    'Code',
+],
+    [
+    '.*\.RBP$',
+    'Code',
+],
+    [
+    '.*\.SNIPPET$',
+    'Code',
+],
+    [
+    '.*\.DEC$',
+    'Code',
+],
+    [
+    '.*\.GED$',
+    'Code',
+],
+    [
+    '.*\.SLOGO$',
+    'Code',
+],
+    [
+    '.*\.FXL$',
+    'Code',
+],
+    [
+    '.*\.FGL$',
+    'Code',
+],
+    [
+    '.*\.TPU$',
+    'Code',
+],
+    [
+    '.*\.PDM$',
+    'Code',
+],
+    [
+    '.*\.FSPROJ$',
+    'Code',
+],
+    [
+    '.*\.LINQ$',
+    'Code',
+],
+    [
+    '.*\.GEMSPEC$',
+    'Code',
+],
+    [
+    '.*\.CLIPS$',
+    'Code',
+],
+    [
+    '.*\.WPW$',
+    'Code',
+],
+    [
+    '.*\.JPR$',
+    'Code',
+],
+    [
+    '.*\.MDZIP$',
+    'Code',
+],
+    [
+    '.*\.EQL$',
+    'Code',
+],
+    [
+    '.*\.RISE$',
+    'Code',
+],
+    [
+    '.*\.TLI$',
+    'Code',
+],
+    [
+    '.*\.TLH$',
+    'Code',
+],
+    [
+    '.*\.FXCPROJ$',
+    'Code',
+],
+    [
+    '.*\.WDP$',
+    'Code',
+],
+    [
+    '.*\.RESJSON$',
+    'Code',
+],
+    [
+    '.*\.BCP$',
+    'Code',
+],
+    [
+    '.*\.COB$',
+    'Code',
+],
+    [
+    '.*\.GSZIP$',
+    'Code',
+],
+    [
+    '.*\.MAK$',
+    'Code',
+],
+    [
+    '.*\.SCRIPTTERMINOLOGY$',
+    'Code',
+],
+    [
+    '.*\.CCP$',
+    'Code',
+],
+    [
+    '.*\.C$',
+    'Code',
+],
+    [
+    '.*\.TDS$',
+    'Code',
+],
+    [
+    '.*\.TNS$',
+    'Code',
+],
+    [
+    '.*\.TCL$',
+    'Code',
+],
+    [
+    '.*\.CAF$',
+    'Code',
+],
+    [
+    '.*\.DBA$',
+    'Code',
+],
+    [
+    '.*\.LPROJ$',
+    'Code',
+],
+    [
+    '.*\.DPK$',
+    'Code',
+],
+    [
+    '.*\.DSP$',
+    'Code',
+],
+    [
+    '.*\.MOD$',
+    'Code',
+],
+    [
+    '.*\.XIB$',
+    'Code',
+],
+    [
+    '.*\.RKT$',
+    'Code',
+],
+    [
+    '.*\.PSC$',
+    'Code',
+],
+    [
+    '.*\.GREENFOOT$',
+    'Code',
+],
+    [
+    '.*\.PCH$',
+    'Code',
+],
+    [
+    '.*\.RNC$',
+    'Code',
+],
+    [
+    '.*\.BBPROJECTD$',
+    'Code',
+],
+    [
+    '.*\.ENT$',
+    'Code',
+],
+    [
+    '.*\.XCODEPROJ$',
+    'Code',
+],
+    [
+    '.*\.MPR$',
+    'Code',
+],
+    [
+    '.*\.XCARCHIVE$',
+    'Code',
+],
+    [
+    '.*\.SPEC$',
+    'Code',
+],
+    [
+    '.*\.MSP$',
+    'Code',
+],
+    [
+    '.*\.WXL$',
+    'Code',
+],
+    [
+    '.*\.RAV$',
+    'Code',
+],
+    [
+    '.*\.P$',
+    'Code',
+],
+    [
+    '.*\.PRG$',
+    'Code',
+],
+    [
+    '.*\.VTV$',
+    'Code',
+],
+    [
+    '.*\.VTML$',
+    'Code',
+],
+    [
+    '.*\.CVSRC$',
+    'Code',
+],
+    [
+    '.*\.CSN$',
+    'Code',
+],
+    [
+    '.*\.VSMPROJ$',
+    'Code',
+],
+    [
+    '.*\.VSMDI$',
+    'Code',
+],
+    [
+    '.*\.SBPROJ$',
+    'Code',
+],
+    [
+    '.*\.R$',
+    'Code',
+],
+    [
+    '.*\.POD$',
+    'Code',
+],
+    [
+    '.*\.LSPROJ$',
+    'Code',
+],
+    [
+    '.*\.ACD$',
+    'Code',
+],
+    [
+    '.*\.BRX$',
+    'Code',
+],
+    [
+    '.*\.RSS$',
+    'Code',
+],
+    [
+    '.*\.ODL$',
+    'Code',
+],
+    [
+    '.*\.DFM$',
+    'Code',
+],
+    [
+    '.*\.CSI$',
+    'Code',
+],
+    [
+    '.*\.LHS$',
+    'Code',
+],
+    [
+    '.*\.LIT$',
+    'Code',
+],
+    [
+    '.*\.VCP$',
+    'Code',
+],
+    [
+    '.*\.DBPRO$',
+    'Code',
+],
+    [
+    '.*\.WIXMSP$',
+    'Code',
+],
+    [
+    '.*\.MAGIK$',
+    'Code',
+],
+    [
+    '.*\.WIXOBJ$',
+    'Code',
+],
+    [
+    '.*\.WXI$',
+    'Code',
+],
+    [
+    '.*\.SCRIPTSUITE$',
+    'Code',
+],
+    [
+    '.*\.DBA$',
+    'Code',
+],
+    [
+    '.*\.XQUERY$',
+    'Code',
+],
+    [
+    '.*\.FSI$',
+    'Code',
+],
+    [
+    '.*\.CFC$',
+    'Code',
+],
+    [
+    '.*\.DCU$',
+    'Code',
+],
+    [
+    '.*\.NFM$',
+    'Code',
+],
+    [
+    '.*\.ARTPROJ$',
+    'Code',
+],
+    [
+    '.*\.DBO$',
+    'Code',
+],
+    [
+    '.*\.VGC$',
+    'Code',
+],
+    [
+    '.*\.VSP$',
+    'Code',
+],
+    [
+    '.*\.SSC$',
+    'Code',
+],
+    [
+    '.*\.DEVICEIDS$',
+    'Code',
+],
+    [
+    '.*\.GROOVY$',
+    'Code',
+],
+    [
+    '.*\.WIXPROJ$',
+    'Code',
+],
+    [
+    '.*\.TU$',
+    'Code',
+],
+    [
+    '.*\.GMD$',
+    'Code',
+],
+    [
+    '.*\.JPX$',
+    'Code',
+],
+    [
+    '.*\.R$',
+    'Code',
+],
+    [
+    '.*\.1ST$',
+    'Documents',
+],
+    [
+    '.*\.ABW$',
+    'Documents',
+],
+    [
+    '.*\.ACT$',
+    'Documents',
+],
+    [
+    '.*\.ADT$',
+    'Documents',
+],
+    [
+    '.*\.AIM$',
+    'Documents',
+],
+    [
+    '.*\.ANS$',
+    'Documents',
+],
+    [
+    '.*\.ASC$',
+    'Documents',
+],
+    [
+    '.*\.ASC$',
+    'Documents',
+],
+    [
+    '.*\.ASCII$',
+    'Documents',
+],
+    [
+    '.*\.ATY$',
+    'Documents',
+],
+    [
+    '.*\.AZW$',
+    'Documents',
+],
+    [
+    '.*\.BAD$',
+    'Documents',
+],
+    [
+    '.*\.BBS$',
+    'Documents',
+],
+    [
+    '.*\.BDP$',
+    'Documents',
+],
+    [
+    '.*\.BDR$',
+    'Documents',
+],
+    [
+    '.*\.BEAN$',
+    'Documents',
+],
+    [
+    '.*\.BIB$',
+    'Documents',
+],
+    [
+    '.*\.BLG$',
+    'Documents',
+],
+    [
+    '.*\.BNA$',
+    'Documents',
+],
+    [
+    '.*\.BOC$',
+    'Documents',
+],
+    [
+    '.*\.CHARSET$',
+    'Documents',
+],
+    [
+    '.*\.CHORD$',
+    'Documents',
+],
+    [
+    '.*\.CRD$',
+    'Documents',
+],
+    [
+    '.*\.CRWL$',
+    'Documents',
+],
+    [
+    '.*\.CYI$',
+    'Documents',
+],
+    [
+    '.*\.DBT$',
+    'Documents',
+],
+    [
+    '.*\.DCT$',
+    'Documents',
+],
+    [
+    '.*\.DGS$',
+    'Documents',
+],
+    [
+    '.*\.DIZ$',
+    'Documents',
+],
+    [
+    '.*\.DNE$',
+    'Documents',
+],
+    [
+    '.*\.DOC$',
+    'Documents',
+],
+    [
+    '.*\.DOC$',
+    'Documents',
+],
+    [
+    '.*\.DOCM$',
+    'Documents',
+],
+    [
+    '.*\.DOCX$',
+    'Documents',
+],
+    [
+    '.*\.DOT$',
+    'Documents',
+],
+    [
+    '.*\.DOTM$',
+    'Documents',
+],
+    [
+    '.*\.DOTX$',
+    'Documents',
+],
+    [
+    '.*\.DVI$',
+    'Documents',
+],
+    [
+    '.*\.DX$',
+    'Documents',
+],
+    [
+    '.*\.EMAIL$',
+    'Documents',
+],
+    [
+    '.*\.EMLX$',
+    'Documents',
+],
+    [
+    '.*\.ERR$',
+    'Documents',
+],
+    [
+    '.*\.ERR$',
+    'Documents',
+],
+    [
+    '.*\.ETF$',
+    'Documents',
+],
+    [
+    '.*\.ETF$',
+    'Documents',
+],
+    [
+    '.*\.ETX$',
+    'Documents',
+],
+    [
+    '.*\.EUC$',
+    'Documents',
+],
+    [
+    '.*\.FAQ$',
+    'Documents',
+],
+    [
+    '.*\.FB2$',
+    'Documents',
+],
+    [
+    '.*\.FBL$',
+    'Documents',
+],
+    [
+    '.*\.FDF$',
+    'Documents',
+],
+    [
+    '.*\.FDR$',
+    'Documents',
+],
+    [
+    '.*\.FDS$',
+    'Documents',
+],
+    [
+    '.*\.FES$',
+    'Documents',
+],
+    [
+    '.*\.FLR$',
+    'Documents',
+],
+    [
+    '.*\.FPT$',
+    'Documents',
+],
+    [
+    '.*\.FPT$',
+    'Documents',
+],
+    [
+    '.*\.FRT$',
+    'Documents',
+],
+    [
+    '.*\.FXC$',
+    'Documents',
+],
+    [
+    '.*\.GIO$',
+    'Documents',
+],
+    [
+    '.*\.GPN$',
+    'Documents',
+],
+    [
+    '.*\.GSD$',
+    'Documents',
+],
+    [
+    '.*\.GTHR$',
+    'Documents',
+],
+    [
+    '.*\.GTX$',
+    'Documents',
+],
+    [
+    '.*\.GV$',
+    'Documents',
+],
+    [
+    '.*\.H1S$',
+    'Documents',
+],
+    [
+    '.*\.HHT$',
+    'Documents',
+],
+    [
+    '.*\.HKM$',
+    'Documents',
+],
+    [
+    '.*\.HS$',
+    'Documents',
+],
+    [
+    '.*\.HWP$',
+    'Documents',
+],
+    [
+    '.*\.HZ$',
+    'Documents',
+],
+    [
+    '.*\.IDX$',
+    'Documents',
+],
+    [
+    '.*\.IIL$',
+    'Documents',
+],
+    [
+    '.*\.IMAPMBOX$',
+    'Documents',
+],
+    [
+    '.*\.IPF$',
+    'Documents',
+],
+    [
+    '.*\.JIS$',
+    'Documents',
+],
+    [
+    '.*\.JP1$',
+    'Documents',
+],
+    [
+    '.*\.KLG$',
+    'Documents',
+],
+    [
+    '.*\.KLG$',
+    'Documents',
+],
+    [
+    '.*\.KML$',
+    'Documents',
+],
+    [
+    '.*\.KNT$',
+    'Documents',
+],
+    [
+    '.*\.KON$',
+    'Documents',
+],
+    [
+    '.*\.KWD$',
+    'Documents',
+],
+    [
+    '.*\.LATEX$',
+    'Documents',
+],
+    [
+    '.*\.LBT$',
+    'Documents',
+],
+    [
+    '.*\.LIC$',
+    'Documents',
+],
+    [
+    '.*\.LIS$',
+    'Documents',
+],
+    [
+    '.*\.LIT$',
+    'Documents',
+],
+    [
+    '.*\.LOG$',
+    'Documents',
+],
+    [
+    '.*\.LP2$',
+    'Documents',
+],
+    [
+    '.*\.LRC$',
+    'Documents',
+],
+    [
+    '.*\.LRF$',
+    'Documents',
+],
+    [
+    '.*\.LRX$',
+    'Documents',
+],
+    [
+    '.*\.LSD$',
+    'Documents',
+],
+    [
+    '.*\.LST$',
+    'Documents',
+],
+    [
+    '.*\.LST$',
+    'Documents',
+],
+    [
+    '.*\.LTR$',
+    'Documents',
+],
+    [
+    '.*\.LUE$',
+    'Documents',
+],
+    [
+    '.*\.LUF$',
+    'Documents',
+],
+    [
+    '.*\.LWP$',
+    'Documents',
+],
+    [
+    '.*\.LXFML$',
+    'Documents',
+],
+    [
+    '.*\.LYT$',
+    'Documents',
+],
+    [
+    '.*\.LYX$',
+    'Documents',
+],
+    [
+    '.*\.MBOX$',
+    'Documents',
+],
+    [
+    '.*\.ME$',
+    'Documents',
+],
+    [
+    '.*\.MELL$',
+    'Documents',
+],
+    [
+    '.*\.MELLEL$',
+    'Documents',
+],
+    [
+    '.*\.MNT$',
+    'Documents',
+],
+    [
+    '.*\.MSG$',
+    'Documents',
+],
+    [
+    '.*\.MW$',
+    'Documents',
+],
+    [
+    '.*\.MWD$',
+    'Documents',
+],
+    [
+    '.*\.MWP$',
+    'Documents',
+],
+    [
+    '.*\.MXI$',
+    'Documents',
+],
+    [
+    '.*\.NFO$',
+    'Documents',
+],
+    [
+    '.*\.NOTES$',
+    'Documents',
+],
+    [
+    '.*\.NOW$',
+    'Documents',
+],
+    [
+    '.*\.NWCTXT$',
+    'Documents',
+],
+    [
+    '.*\.NWS$',
+    'Documents',
+],
+    [
+    '.*\.NZB$',
+    'Documents',
+],
+    [
+    '.*\.OCR$',
+    'Documents',
+],
+    [
+    '.*\.ODM$',
+    'Documents',
+],
+    [
+    '.*\.ODT$',
+    'Documents',
+],
+    [
+    '.*\.OFL$',
+    'Documents',
+],
+    [
+    '.*\.OGS$',
+    'Documents',
+],
+    [
+    '.*\.OPF$',
+    'Documents',
+],
+    [
+    '.*\.OPML$',
+    'Documents',
+],
+    [
+    '.*\.ORT$',
+    'Documents',
+],
+    [
+    '.*\.OTT$',
+    'Documents',
+],
+    [
+    '.*\.P65$',
+    'Documents',
+],
+    [
+    '.*\.P7S$',
+    'Documents',
+],
+    [
+    '.*\.PAGES$',
+    'Documents',
+],
+    [
+    '.*\.PDG$',
+    'Documents',
+],
+    [
+    '.*\.PFX$',
+    'Documents',
+],
+    [
+    '.*\.PJT$',
+    'Documents',
+],
+    [
+    '.*\.PM6$',
+    'Documents',
+],
+    [
+    '.*\.PRT$',
+    'Documents',
+],
+    [
+    '.*\.PSW$',
+    'Documents',
+],
+    [
+    '.*\.PVJ$',
+    'Documents',
+],
+    [
+    '.*\.PVM$',
+    'Documents',
+],
+    [
+    '.*\.PWI$',
+    'Documents',
+],
+    [
+    '.*\.QDL$',
+    'Documents',
+],
+    [
+    '.*\.RAD$',
+    'Documents',
+],
+    [
+    '.*\.README$',
+    'Documents',
+],
+    [
+    '.*\.RNG$',
+    'Documents',
+],
+    [
+    '.*\.RPT$',
+    'Documents',
+],
+    [
+    '.*\.RSM$',
+    'Documents',
+],
+    [
+    '.*\.RST$',
+    'Documents',
+],
+    [
+    '.*\.RTD$',
+    'Documents',
+],
+    [
+    '.*\.RTF$',
+    'Documents',
+],
+    [
+    '.*\.RTFD$',
+    'Documents',
+],
+    [
+    '.*\.RTX$',
+    'Documents',
+],
+    [
+    '.*\.RUN$',
+    'Documents',
+],
+    [
+    '.*\.RZK$',
+    'Documents',
+],
+    [
+    '.*\.RZN$',
+    'Documents',
+],
+    [
+    '.*\.SAF$',
+    'Documents',
+],
+    [
+    '.*\.SAFETEXT$',
+    'Documents',
+],
+    [
+    '.*\.SAM$',
+    'Documents',
+],
+    [
+    '.*\.SAVE$',
+    'Documents',
+],
+    [
+    '.*\.SCC$',
+    'Documents',
+],
+    [
+    '.*\.SCM$',
+    'Documents',
+],
+    [
+    '.*\.SCT$',
+    'Documents',
+],
+    [
+    '.*\.SCW$',
+    'Documents',
+],
+    [
+    '.*\.SDM$',
+    'Documents',
+],
+    [
+    '.*\.SDW$',
+    'Documents',
+],
+    [
+    '.*\.SFV$',
+    'Documents',
+],
+    [
+    '.*\.SGM$',
+    'Documents',
+],
+    [
+    '.*\.SIG$',
+    'Documents',
+],
+    [
+    '.*\.SLS$',
+    'Documents',
+],
+    [
+    '.*\.SMS$',
+    'Documents',
+],
+    [
+    '.*\.SRT$',
+    'Documents',
+],
+    [
+    '.*\.SSA$',
+    'Documents',
+],
+    [
+    '.*\.STRINGS$',
+    'Documents',
+],
+    [
+    '.*\.STW$',
+    'Documents',
+],
+    [
+    '.*\.STY$',
+    'Documents',
+],
+    [
+    '.*\.SXW$',
+    'Documents',
+],
+    [
+    '.*\.TAB$',
+    'Documents',
+],
+    [
+    '.*\.TDF$',
+    'Documents',
+],
+    [
+    '.*\.TEX$',
+    'Documents',
+],
+    [
+    '.*\.TEXT$',
+    'Documents',
+],
+    [
+    '.*\.TEXTCLIPPING$',
+    'Documents',
+],
+    [
+    '.*\.THP$',
+    'Documents',
+],
+    [
+    '.*\.TLB$',
+    'Documents',
+],
+    [
+    '.*\.TM$',
+    'Documents',
+],
+    [
+    '.*\.TMX$',
+    'Documents',
+],
+    [
+    '.*\.TPC$',
+    'Documents',
+],
+    [
+    '.*\.TR2$',
+    'Documents',
+],
+    [
+    '.*\.TR3$',
+    'Documents',
+],
+    [
+    '.*\.TVJ$',
+    'Documents',
+],
+    [
+    '.*\.TWP$',
+    'Documents',
+],
+    [
+    '.*\.TXT$',
+    'Documents',
+],
+    [
+    '.*\.U3I$',
+    'Documents',
+],
+    [
+    '.*\.UNAUTH$',
+    'Documents',
+],
+    [
+    '.*\.UNX$',
+    'Documents',
+],
+    [
+    '.*\.UPD$',
+    'Documents',
+],
+    [
+    '.*\.UTF8$',
+    'Documents',
+],
+    [
+    '.*\.UTXT$',
+    'Documents',
+],
+    [
+    '.*\.VCT$',
+    'Documents',
+],
+    [
+    '.*\.VIM$',
+    'Documents',
+],
+    [
+    '.*\.VNT$',
+    'Documents',
+],
+    [
+    '.*\.VW3$',
+    'Documents',
+],
+    [
+    '.*\.WBK$',
+    'Documents',
+],
+    [
+    '.*\.WCF$',
+    'Documents',
+],
+    [
+    '.*\.WGZ$',
+    'Documents',
+],
+    [
+    '.*\.WN$',
+    'Documents',
+],
+    [
+    '.*\.WP$',
+    'Documents',
+],
+    [
+    '.*\.WP4$',
+    'Documents',
+],
+    [
+    '.*\.WP5$',
+    'Documents',
+],
+    [
+    '.*\.WP6$',
+    'Documents',
+],
+    [
+    '.*\.WP7$',
+    'Documents',
+],
+    [
+    '.*\.WPA$',
+    'Documents',
+],
+    [
+    '.*\.WPD$',
+    'Documents',
+],
+    [
+    '.*\.WPL$',
+    'Documents',
+],
+    [
+    '.*\.WPS$',
+    'Documents',
+],
+    [
+    '.*\.WPT$',
+    'Documents',
+],
+    [
+    '.*\.WRD$',
+    'Documents',
+],
+    [
+    '.*\.WRI$',
+    'Documents',
+],
+    [
+    '.*\.WSD$',
+    'Documents',
+],
+    [
+    '.*\.WSH$',
+    'Documents',
+],
+    [
+    '.*\.WTX$',
+    'Documents',
+],
+    [
+    '.*\.XDL$',
+    'Documents',
+],
+    [
+    '.*\.XDL$',
+    'Documents',
+],
+    [
+    '.*\.XFD$',
+    'Documents',
+],
+    [
+    '.*\.XLF$',
+    'Documents',
+],
+    [
+    '.*\.XWP$',
+    'Documents',
+],
+    [
+    '.*\.XWP$',
+    'Documents',
+],
+    [
+    '.*\.XWP$',
+    'Documents',
+],
+    [
+    '.*\.XY$',
+    'Documents',
+],
+    [
+    '.*\.XY3$',
+    'Documents',
+],
+    [
+    '.*\.XYP$',
+    'Documents',
+],
+    [
+    '.*\.XYW$',
+    'Documents',
+],
+    [
+    '.*\.YBK$',
+    'Documents',
+],
+    [
+    '.*\.YML$',
+    'Documents',
+],
+    [
+    '.*\.ZW$',
+    'Documents',
+],
+    [
+    '.*\._NWS$',
+    'Documents',
+],
+    [
+    '.*\.006$',
+    'Images',
+],
+    [
+    '.*\.007$',
+    'Images',
+],
+    [
+    '.*\.3DMF$',
+    'Images',
+],
+    [
+    '.*\.3DX$',
+    'Images',
+],
+    [
+    '.*\.8PBS$',
+    'Images',
+],
+    [
+    '.*\.ABM$',
+    'Images',
+],
+    [
+    '.*\.ABR$',
+    'Images',
+],
+    [
+    '.*\.ADI$',
+    'Images',
+],
+    [
+    '.*\.AEX$',
+    'Images',
+],
+    [
+    '.*\.AI$',
+    'Images',
+],
+    [
+    '.*\.AIS$',
+    'Images',
+],
+    [
+    '.*\.ALBM$',
+    'Images',
+],
+    [
+    '.*\.AMU$',
+    'Images',
+],
+    [
+    '.*\.ARD$',
+    'Images',
+],
+    [
+    '.*\.ART$',
+    'Images',
+],
+    [
+    '.*\.ARW$',
+    'Images',
+],
+    [
+    '.*\.ASAT$',
+    'Images',
+],
+    [
+    '.*\.B16$',
+    'Images',
+],
+    [
+    '.*\.BIL$',
+    'Images',
+],
+    [
+    '.*\.BLEND$',
+    'Images',
+],
+    [
+    '.*\.BLKRT$',
+    'Images',
+],
+    [
+    '.*\.BLZ$',
+    'Images',
+],
+    [
+    '.*\.BMC$',
+    'Images',
+],
+    [
+    '.*\.BMC$',
+    'Images',
+],
+    [
+    '.*\.BMP$',
+    'Images',
+],
+    [
+    '.*\.BOB$',
+    'Images',
+],
+    [
+    '.*\.BR4$',
+    'Images',
+],
+    [
+    '.*\.BR5$',
+    'Images',
+],
+    [
+    '.*\.C4$',
+    'Images',
+],
+    [
+    '.*\.CADRG$',
+    'Images',
+],
+    [
+    '.*\.CATPART$',
+    'Images',
+],
+    [
+    '.*\.CCX$',
+    'Images',
+],
+    [
+    '.*\.CDR$',
+    'Images',
+],
+    [
+    '.*\.CDT$',
+    'Images',
+],
+    [
+    '.*\.CDX$',
+    'Images',
+],
+    [
+    '.*\.CGM$',
+    'Images',
+],
+    [
+    '.*\.CHT$',
+    'Images',
+],
+    [
+    '.*\.CM2$',
+    'Images',
+],
+    [
+    '.*\.CMX$',
+    'Images',
+],
+    [
+    '.*\.CMZ$',
+    'Images',
+],
+    [
+    '.*\.COMICDOC$',
+    'Images',
+],
+    [
+    '.*\.CPL$',
+    'Images',
+],
+    [
+    '.*\.CPS$',
+    'Images',
+],
+    [
+    '.*\.CPT$',
+    'Images',
+],
+    [
+    '.*\.CR2$',
+    'Images',
+],
+    [
+    '.*\.CSF$',
+    'Images',
+],
+    [
+    '.*\.CV5$',
+    'Images',
+],
+    [
+    '.*\.CVG$',
+    'Images',
+],
+    [
+    '.*\.CVI$',
+    'Images',
+],
+    [
+    '.*\.CVI$',
+    'Images',
+],
+    [
+    '.*\.CVX$',
+    'Images',
+],
+    [
+    '.*\.DAE$',
+    'Images',
+],
+    [
+    '.*\.DCIM$',
+    'Images',
+],
+    [
+    '.*\.DCM$',
+    'Images',
+],
+    [
+    '.*\.DCR$',
+    'Images',
+],
+    [
+    '.*\.DCS$',
+    'Images',
+],
+    [
+    '.*\.DDS$',
+    'Images',
+],
+    [
+    '.*\.DESIGN$',
+    'Images',
+],
+    [
+    '.*\.DIB$',
+    'Images',
+],
+    [
+    '.*\.DJV$',
+    'Images',
+],
+    [
+    '.*\.DJVU$',
+    'Images',
+],
+    [
+    '.*\.DNG$',
+    'Images',
+],
+    [
+    '.*\.DRG$',
+    'Images',
+],
+    [
+    '.*\.DRW$',
+    'Images',
+],
+    [
+    '.*\.DRWDOT$',
+    'Images',
+],
+    [
+    '.*\.DT2$',
+    'Images',
+],
+    [
+    '.*\.DVL$',
+    'Images',
+],
+    [
+    '.*\.DWB$',
+    'Images',
+],
+    [
+    '.*\.DWF$',
+    'Images',
+],
+    [
+    '.*\.DXB$',
+    'Images',
+],
+    [
+    '.*\.EASM$',
+    'Images',
+],
+    [
+    '.*\.EC3$',
+    'Images',
+],
+    [
+    '.*\.EDP$',
+    'Images',
+],
+    [
+    '.*\.EDRW$',
+    'Images',
+],
+    [
+    '.*\.EDW$',
+    'Images',
+],
+    [
+    '.*\.EMF$',
+    'Images',
+],
+    [
+    '.*\.EPRT$',
+    'Images',
+],
+    [
+    '.*\.EPS$',
+    'Images',
+],
+    [
+    '.*\.EPSF$',
+    'Images',
+],
+    [
+    '.*\.EPSI$',
+    'Images',
+],
+    [
+    '.*\.EXR$',
+    'Images',
+],
+    [
+    '.*\.FAC$',
+    'Images',
+],
+    [
+    '.*\.FACE$',
+    'Images',
+],
+    [
+    '.*\.FBM$',
+    'Images',
+],
+    [
+    '.*\.FBX$',
+    'Images',
+],
+    [
+    '.*\.FC2$',
+    'Images',
+],
+    [
+    '.*\.FCZ$',
+    'Images',
+],
+    [
+    '.*\.FD2$',
+    'Images',
+],
+    [
+    '.*\.FH11$',
+    'Images',
+],
+    [
+    '.*\.FHD$',
+    'Images',
+],
+    [
+    '.*\.FIT$',
+    'Images',
+],
+    [
+    '.*\.FLIC$',
+    'Images',
+],
+    [
+    '.*\.FLM$',
+    'Images',
+],
+    [
+    '.*\.FM$',
+    'Images',
+],
+    [
+    '.*\.FPF$',
+    'Images',
+],
+    [
+    '.*\.FS$',
+    'Images',
+],
+    [
+    '.*\.FW.PNG$',
+    'Images',
+],
+    [
+    '.*\.FXG$',
+    'Images',
+],
+    [
+    '.*\.GIF$',
+    'Images',
+],
+    [
+    '.*\.GRAFFLE$',
+    'Images',
+],
+    [
+    '.*\.GTX$',
+    'Images',
+],
+    [
+    '.*\.HD2$',
+    'Images',
+],
+    [
+    '.*\.HDZ$',
+    'Images',
+],
+    [
+    '.*\.HPD$',
+    'Images',
+],
+    [
+    '.*\.HPI$',
+    'Images',
+],
+    [
+    '.*\.HR2$',
+    'Images',
+],
+    [
+    '.*\.HTZ4$',
+    'Images',
+],
+    [
+    '.*\.ICL$',
+    'Images',
+],
+    [
+    '.*\.ICS$',
+    'Images',
+],
+    [
+    '.*\.IDW$',
+    'Images',
+],
+    [
+    '.*\.IEF$',
+    'Images',
+],
+    [
+    '.*\.IGES$',
+    'Images',
+],
+    [
+    '.*\.IGR$',
+    'Images',
+],
+    [
+    '.*\.ILBM$',
+    'Images',
+],
+    [
+    '.*\.ILM$',
+    'Images',
+],
+    [
+    '.*\.IMA$',
+    'Images',
+],
+    [
+    '.*\.IME$',
+    'Images',
+],
+    [
+    '.*\.IMI$',
+    'Images',
+],
+    [
+    '.*\.IMS$',
+    'Images',
+],
+    [
+    '.*\.INDD$',
+    'Images',
+],
+    [
+    '.*\.INDT$',
+    'Images',
+],
+    [
+    '.*\.IPJ$',
+    'Images',
+],
+    [
+    '.*\.IRF$',
+    'Images',
+],
+    [
+    '.*\.ITC2$',
+    'Images',
+],
+    [
+    '.*\.ITHMB$',
+    'Images',
+],
+    [
+    '.*\.J2K$',
+    'Images',
+],
+    [
+    '.*\.JIFF$',
+    'Images',
+],
+    [
+    '.*\.JNG$',
+    'Images',
+],
+    [
+    '.*\.JPEG$',
+    'Images',
+],
+    [
+    '.*\.JPF$',
+    'Images',
+],
+    [
+    '.*\.JPG$',
+    'Images',
+],
+    [
+    '.*\.JPG2$',
+    'Images',
+],
+    [
+    '.*\.JPS$',
+    'Images',
+],
+    [
+    '.*\.JPW$',
+    'Images',
+],
+    [
+    '.*\.JT$',
+    'Images',
+],
+    [
+    '.*\.JWL$',
+    'Images',
+],
+    [
+    '.*\.JXR$',
+    'Images',
+],
+    [
+    '.*\.KDC$',
+    'Images',
+],
+    [
+    '.*\.KODAK$',
+    'Images',
+],
+    [
+    '.*\.KPG$',
+    'Images',
+],
+    [
+    '.*\.LDA$',
+    'Images',
+],
+    [
+    '.*\.LDM$',
+    'Images',
+],
+    [
+    '.*\.LET$',
+    'Images',
+],
+    [
+    '.*\.LT2$',
+    'Images',
+],
+    [
+    '.*\.LTZ$',
+    'Images',
+],
+    [
+    '.*\.LVA$',
+    'Images',
+],
+    [
+    '.*\.LVF$',
+    'Images',
+],
+    [
+    '.*\.LXF$',
+    'Images',
+],
+    [
+    '.*\.MAC$',
+    'Images',
+],
+    [
+    '.*\.MACP$',
+    'Images',
+],
+    [
+    '.*\.MCS$',
+    'Images',
+],
+    [
+    '.*\.MCZ$',
+    'Images',
+],
+    [
+    '.*\.MDI$',
+    'Images',
+],
+    [
+    '.*\.MGS$',
+    'Images',
+],
+    [
+    '.*\.MGX$',
+    'Images',
+],
+    [
+    '.*\.MIC$',
+    'Images',
+],
+    [
+    '.*\.MIP$',
+    'Images',
+],
+    [
+    '.*\.MNG$',
+    'Images',
+],
+    [
+    '.*\.MPF$',
+    'Images',
+],
+    [
+    '.*\.MPO$',
+    'Images',
+],
+    [
+    '.*\.MTZ$',
+    'Images',
+],
+    [
+    '.*\.MUR$',
+    'Images',
+],
+    [
+    '.*\.MUR$',
+    'Images',
+],
+    [
+    '.*\.NAV$',
+    'Images',
+],
+    [
+    '.*\.NCR$',
+    'Images',
+],
+    [
+    '.*\.NEU$',
+    'Images',
+],
+    [
+    '.*\.NFF$',
+    'Images',
+],
+    [
+    '.*\.NJB$',
+    'Images',
+],
+    [
+    '.*\.NTC$',
+    'Images',
+],
+    [
+    '.*\.NTH$',
+    'Images',
+],
+    [
+    '.*\.ODI$',
+    'Images',
+],
+    [
+    '.*\.ODIF$',
+    'Images',
+],
+    [
+    '.*\.OLA$',
+    'Images',
+],
+    [
+    '.*\.OPD$',
+    'Images',
+],
+    [
+    '.*\.ORA$',
+    'Images',
+],
+    [
+    '.*\.OTA$',
+    'Images',
+],
+    [
+    '.*\.OTB$',
+    'Images',
+],
+    [
+    '.*\.OTC$',
+    'Images',
+],
+    [
+    '.*\.OTG$',
+    'Images',
+],
+    [
+    '.*\.OTI$',
+    'Images',
+],
+    [
+    '.*\.OVW$',
+    'Images',
+],
+    [
+    '.*\.P21$',
+    'Images',
+],
+    [
+    '.*\.P2Z$',
+    'Images',
+],
+    [
+    '.*\.PAT$',
+    'Images',
+],
+    [
+    '.*\.PC6$',
+    'Images',
+],
+    [
+    '.*\.PC7$',
+    'Images',
+],
+    [
+    '.*\.PCD$',
+    'Images',
+],
+    [
+    '.*\.PCT$',
+    'Images',
+],
+    [
+    '.*\.PCX$',
+    'Images',
+],
+    [
+    '.*\.PDF$',
+    'Images',
+],
+    [
+    '.*\.PDN$',
+    'Images',
+],
+    [
+    '.*\.PEF$',
+    'Images',
+],
+    [
+    '.*\.PI2$',
+    'Images',
+],
+    [
+    '.*\.PIC$',
+    'Images',
+],
+    [
+    '.*\.PIC$',
+    'Images',
+],
+    [
+    '.*\.PICNC$',
+    'Images',
+],
+    [
+    '.*\.PICTCLIPPING$',
+    'Images',
+],
+    [
+    '.*\.PL0$',
+    'Images',
+],
+    [
+    '.*\.PL2$',
+    'Images',
+],
+    [
+    '.*\.PLN$',
+    'Images',
+],
+    [
+    '.*\.PMB$',
+    'Images',
+],
+    [
+    '.*\.PNG$',
+    'Images',
+],
+    [
+    '.*\.POL$',
+    'Images',
+],
+    [
+    '.*\.PP2$',
+    'Images',
+],
+    [
+    '.*\.PPSX$',
+    'Images',
+],
+    [
+    '.*\.PRW$',
+    'Images',
+],
+    [
+    '.*\.PS$',
+    'Images',
+],
+    [
+    '.*\.PS$',
+    'Images',
+],
+    [
+    '.*\.PSB$',
+    'Images',
+],
+    [
+    '.*\.PSD$',
+    'Images',
+],
+    [
+    '.*\.PSF$',
+    'Images',
+],
+    [
+    '.*\.PSG$',
+    'Images',
+],
+    [
+    '.*\.PSP$',
+    'Images',
+],
+    [
+    '.*\.PSPIMAGE$',
+    'Images',
+],
+    [
+    '.*\.PSQ$',
+    'Images',
+],
+    [
+    '.*\.PVL$',
+    'Images',
+],
+    [
+    '.*\.PWD$',
+    'Images',
+],
+    [
+    '.*\.PWS$',
+    'Images',
+],
+    [
+    '.*\.PX$',
+    'Images',
+],
+    [
+    '.*\.PXR$',
+    'Images',
+],
+    [
+    '.*\.PZ2$',
+    'Images',
+],
+    [
+    '.*\.PZ3$',
+    'Images',
+],
+    [
+    '.*\.QTIF$',
+    'Images',
+],
+    [
+    '.*\.QTZ$',
+    'Images',
+],
+    [
+    '.*\.QXD$',
+    'Images',
+],
+    [
+    '.*\.RIC$',
+    'Images',
+],
+    [
+    '.*\.RLC$',
+    'Images',
+],
+    [
+    '.*\.RLE$',
+    'Images',
+],
+    [
+    '.*\.RW2$',
+    'Images',
+],
+    [
+    '.*\.SDK$',
+    'Images',
+],
+    [
+    '.*\.SDR$',
+    'Images',
+],
+    [
+    '.*\.SEC$',
+    'Images',
+],
+    [
+    '.*\.SFW$',
+    'Images',
+],
+    [
+    '.*\.SIG$',
+    'Images',
+],
+    [
+    '.*\.SKP$',
+    'Images',
+],
+    [
+    '.*\.SLDASM$',
+    'Images',
+],
+    [
+    '.*\.SLDDRW$',
+    'Images',
+],
+    [
+    '.*\.SLDPRT$',
+    'Images',
+],
+    [
+    '.*\.SNX$',
+    'Images',
+],
+    [
+    '.*\.SRF$',
+    'Images',
+],
+    [
+    '.*\.SST$',
+    'Images',
+],
+    [
+    '.*\.SUN$',
+    'Images',
+],
+    [
+    '.*\.SVG$',
+    'Images',
+],
+    [
+    '.*\.SVGZ$',
+    'Images',
+],
+    [
+    '.*\.TARGA$',
+    'Images',
+],
+    [
+    '.*\.TCW$',
+    'Images',
+],
+    [
+    '.*\.TCX$',
+    'Images',
+],
+    [
+    '.*\.TEX$',
+    'Images',
+],
+    [
+    '.*\.TGA$',
+    'Images',
+],
+    [
+    '.*\.TIF$',
+    'Images',
+],
+    [
+    '.*\.TIFF$',
+    'Images',
+],
+    [
+    '.*\.TJP$',
+    'Images',
+],
+    [
+    '.*\.TN$',
+    'Images',
+],
+    [
+    '.*\.TPF$',
+    'Images',
+],
+    [
+    '.*\.TPX$',
+    'Images',
+],
+    [
+    '.*\.TRIF$',
+    'Images',
+],
+    [
+    '.*\.TRX$',
+    'Images',
+],
+    [
+    '.*\.U3D$',
+    'Images',
+],
+    [
+    '.*\.UPX$',
+    'Images',
+],
+    [
+    '.*\.URT$',
+    'Images',
+],
+    [
+    '.*\.UTX$',
+    'Images',
+],
+    [
+    '.*\.V00$',
+    'Images',
+],
+    [
+    '.*\.V3D$',
+    'Images',
+],
+    [
+    '.*\.VFS$',
+    'Images',
+],
+    [
+    '.*\.VGA$',
+    'Images',
+],
+    [
+    '.*\.VHD$',
+    'Images',
+],
+    [
+    '.*\.VIS$',
+    'Images',
+],
+    [
+    '.*\.VRL$',
+    'Images',
+],
+    [
+    '.*\.VTX$',
+    'Images',
+],
+    [
+    '.*\.WB1$',
+    'Images',
+],
+    [
+    '.*\.WBC$',
+    'Images',
+],
+    [
+    '.*\.WBD$',
+    'Images',
+],
+    [
+    '.*\.WBZ$',
+    'Images',
+],
+    [
+    '.*\.WEBP$',
+    'Images',
+],
+    [
+    '.*\.WGS$',
+    'Images',
+],
+    [
+    '.*\.WI$',
+    'Images',
+],
+    [
+    '.*\.WMF$',
+    'Images',
+],
+    [
+    '.*\.WNK$',
+    'Images',
+],
+    [
+    '.*\.XDW$',
+    'Images',
+],
+    [
+    '.*\.XIP$',
+    'Images',
+],
+    [
+    '.*\.XSI$',
+    'Images',
+],
+    [
+    '.*\.X_B$',
+    'Images',
+],
+    [
+    '.*\.X_T$',
+    'Images',
+],
+    [
+    '.*\.ZDL$',
+    'Images',
+],
+    [
+    '.*\.ZIF$',
+    'Images',
+],
+    [
+    '.*\.ZNO$',
+    'Images',
+],
+    [
+    '.*\.ZPRF$',
+    'Images',
+],
+    [
+    '.*\.ZT$',
+    'Images',
+],
+    [
+    '.*\.ISO$',
+    'ISO',
+],
+    [
+    '.*\.CFG$',
+    'Configuration',
+],
+    [
+    '.*\.CONFIG$',
+    'Configuration',
+],
+    [
+    '.*\.CONF$',
+    'Configuration',
+],
+    [
+    '.*\.TOML$',
+    'Configuration',
+],
+    [
+    '.*\.033$',
+    'Configuration',
+],
+    [
+    '.*\.ACROBATSECURITYSETTINGS$',
+    'Configuration',
+],
+    [
+    '.*\.ACRODATA$',
+    'Configuration',
+],
+    [
+    '.*\.APPLICATION$',
+    'Configuration',
+],
+    [
+    '.*\.APPREF-MS$',
+    'Configuration',
+],
+    [
+    '.*\.ARG$',
+    'Configuration',
+],
+    [
+    '.*\.ASWS$',
+    'Configuration',
+],
+    [
+    '.*\.BAU$',
+    'Configuration',
+],
+    [
+    '.*\.BOOT$',
+    'Configuration',
+],
+    [
+    '.*\.C2R$',
+    'Configuration',
+],
+    [
+    '.*\.CAMP$',
+    'Configuration',
+],
+    [
+    '.*\.CCF$',
+    'Configuration',
+],
+    [
+    '.*\.CSF$',
+    'Configuration',
+],
+    [
+    '.*\.CSI$',
+    'Configuration',
+],
+    [
+    '.*\.CTB$',
+    'Configuration',
+],
+    [
+    '.*\.DIRECTORY$',
+    'Configuration',
+],
+    [
+    '.*\.DOLPHINVIEW$',
+    'Configuration',
+],
+    [
+    '.*\.DPS$',
+    'Configuration',
+],
+    [
+    '.*\.EDP$',
+    'Configuration',
+],
+    [
+    '.*\.EQF$',
+    'Configuration',
+],
+    [
+    '.*\.EXE4J$',
+    'Configuration',
+],
+    [
+    '.*\.FEV$',
+    'Configuration',
+],
+    [
+    '.*\.FLS$',
+    'Configuration',
+],
+    [
+    '.*\.FPW$',
+    'Configuration',
+],
+    [
+    '.*\.FWT$',
+    'Configuration',
+],
+    [
+    '.*\.GIN$',
+    'Configuration',
+],
+    [
+    '.*\.HBK$',
+    'Configuration',
+],
+    [
+    '.*\.HTACCESS$',
+    'Configuration',
+],
+    [
+    '.*\.HYP$',
+    'Configuration',
+],
+    [
+    '.*\.ICA$',
+    'Configuration',
+],
+    [
+    '.*\.IIP$',
+    'Configuration',
+],
+    [
+    '.*\.INI$',
+    'Configuration',
+],
+    [
+    '.*\.KEYCHAIN$',
+    'Configuration',
+],
+    [
+    '.*\.M2S$',
+    'Configuration',
+],
+    [
+    '.*\.MMP$',
+    'Configuration',
+],
+    [
+    '.*\.MST$',
+    'Configuration',
+],
+    [
+    '.*\.ND$',
+    'Configuration',
+],
+    [
+    '.*\.NPE$',
+    'Configuration',
+],
+    [
+    '.*\.OBI$',
+    'Configuration',
+],
+    [
+    '.*\.PCF$',
+    'Configuration',
+],
+    [
+    '.*\.PCP$',
+    'Configuration',
+],
+    [
+    '.*\.PJL$',
+    'Configuration',
+],
+    [
+    '.*\.PLH$',
+    'Configuration',
+],
+    [
+    '.*\.PRF$',
+    'Configuration',
+],
+    [
+    '.*\.QF$',
+    'Configuration',
+],
+    [
+    '.*\.REG$',
+    'Configuration',
+],
+    [
+    '.*\.RWZ$',
+    'Configuration',
+],
+    [
+    '.*\.SBX$',
+    'Configuration',
+],
+    [
+    '.*\.SFO$',
+    'Configuration',
+],
+    [
+    '.*\.SNS$',
+    'Configuration',
+],
+    [
+    '.*\.STY$',
+    'Configuration',
+],
+    [
+    '.*\.SVP$',
+    'Configuration',
+],
+    [
+    '.*\.TD$',
+    'Configuration',
+],
+    [
+    '.*\.TDF$',
+    'Configuration',
+],
+    [
+    '.*\.TSK$',
+    'Configuration',
+],
+    [
+    '.*\.VCPROJ$',
+    'Configuration',
+],
+    [
+    '.*\.VDM$',
+    'Configuration',
+],
+    [
+    '.*\.VMTM$',
+    'Configuration',
+],
+    [
+    '.*\.WJF$',
+    'Configuration',
+],
+    [
+    '.*\.WPL$',
+    'Configuration',
+],
+    [
+    '.*\.XCU$',
+    'Configuration',
+],
+    [
+    '.*\.XWC$',
+    'Configuration',
+],
+    [
+    '.*\.XWS$',
+    'Configuration',
+],
+    [
+    '.*\.GPG$',
+    'Encrypted',
+],
+    [
+    '.*\.UUE$',
+    'Encrypted',
+],
+    [
+    '.*\.MIM$',
+    'Encrypted',
+],
+    [
+    '.*\.264$',
+    'Video',
+],
+    [
+    '.*\.3G2$',
+    'Video',
+],
+    [
+    '.*\.3GP$',
+    'Video',
+],
+    [
+    '.*\.3MM$',
+    'Video',
+],
+    [
+    '.*\.3P2$',
+    'Video',
+],
+    [
+    '.*\.60D$',
+    'Video',
+],
+    [
+    '.*\.AAF$',
+    'Video',
+],
+    [
+    '.*\.AEC$',
+    'Video',
+],
+    [
+    '.*\.AEP$',
+    'Video',
+],
+    [
+    '.*\.AEPX$',
+    'Video',
+],
+    [
+    '.*\.AJP$',
+    'Video',
+],
+    [
+    '.*\.AM4$',
+    'Video',
+],
+    [
+    '.*\.AMV$',
+    'Video',
+],
+    [
+    '.*\.ARF$',
+    'Video',
+],
+    [
+    '.*\.ARV$',
+    'Video',
+],
+    [
+    '.*\.ASD$',
+    'Video',
+],
+    [
+    '.*\.ASF$',
+    'Video',
+],
+    [
+    '.*\.ASX$',
+    'Video',
+],
+    [
+    '.*\.AVB$',
+    'Video',
+],
+    [
+    '.*\.AVD$',
+    'Video',
+],
+    [
+    '.*\.AVI$',
+    'Video',
+],
+    [
+    '.*\.AVP$',
+    'Video',
+],
+    [
+    '.*\.AVS$',
+    'Video',
+],
+    [
+    '.*\.AVS$',
+    'Video',
+],
+    [
+    '.*\.AX$',
+    'Video',
+],
+    [
+    '.*\.AXM$',
+    'Video',
+],
+    [
+    '.*\.BDMV$',
+    'Video',
+],
+    [
+    '.*\.BIK$',
+    'Video',
+],
+    [
+    '.*\.BIX$',
+    'Video',
+],
+    [
+    '.*\.BOX$',
+    'Video',
+],
+    [
+    '.*\.BPJ$',
+    'Video',
+],
+    [
+    '.*\.BUP$',
+    'Video',
+],
+    [
+    '.*\.CAMREC$',
+    'Video',
+],
+    [
+    '.*\.CINE$',
+    'Video',
+],
+    [
+    '.*\.CPI$',
+    'Video',
+],
+    [
+    '.*\.CVC$',
+    'Video',
+],
+    [
+    '.*\.D2V$',
+    'Video',
+],
+    [
+    '.*\.D3V$',
+    'Video',
+],
+    [
+    '.*\.DAV$',
+    'Video',
+],
+    [
+    '.*\.DCE$',
+    'Video',
+],
+    [
+    '.*\.DDAT$',
+    'Video',
+],
+    [
+    '.*\.DIVX$',
+    'Video',
+],
+    [
+    '.*\.DKD$',
+    'Video',
+],
+    [
+    '.*\.DLX$',
+    'Video',
+],
+    [
+    '.*\.DMB$',
+    'Video',
+],
+    [
+    '.*\.DM_84$',
+    'Video',
+],
+    [
+    '.*\.DPG$',
+    'Video',
+],
+    [
+    '.*\.DREAM$',
+    'Video',
+],
+    [
+    '.*\.DSM$',
+    'Video',
+],
+    [
+    '.*\.DV$',
+    'Video',
+],
+    [
+    '.*\.DV2$',
+    'Video',
+],
+    [
+    '.*\.DVM$',
+    'Video',
+],
+    [
+    '.*\.DVR$',
+    'Video',
+],
+    [
+    '.*\.DVR-MS$',
+    'Video',
+],
+    [
+    '.*\.DVX$',
+    'Video',
+],
+    [
+    '.*\.DXR$',
+    'Video',
+],
+    [
+    '.*\.EDL$',
+    'Video',
+],
+    [
+    '.*\.ENC$',
+    'Video',
+],
+    [
+    '.*\.EVO$',
+    'Video',
+],
+    [
+    '.*\.F4V$',
+    'Video',
+],
+    [
+    '.*\.FBR$',
+    'Video',
+],
+    [
+    '.*\.FBZ$',
+    'Video',
+],
+    [
+    '.*\.FCP$',
+    'Video',
+],
+    [
+    '.*\.FCPROJECT$',
+    'Video',
+],
+    [
+    '.*\.FLC$',
+    'Video',
+],
+    [
+    '.*\.FLI$',
+    'Video',
+],
+    [
+    '.*\.FLV$',
+    'Video',
+],
+    [
+    '.*\.GTS$',
+    'Video',
+],
+    [
+    '.*\.GVI$',
+    'Video',
+],
+    [
+    '.*\.GVP$',
+    'Video',
+],
+    [
+    '.*\.H3R$',
+    'Video',
+],
+    [
+    '.*\.HDMOV$',
+    'Video',
+],
+    [
+    '.*\.IFO$',
+    'Video',
+],
+    [
+    '.*\.IMOVIEPROJ$',
+    'Video',
+],
+    [
+    '.*\.IMOVIEPROJECT$',
+    'Video',
+],
+    [
+    '.*\.IRCP$',
+    'Video',
+],
+    [
+    '.*\.IRF$',
+    'Video',
+],
+    [
+    '.*\.IRF$',
+    'Video',
+],
+    [
+    '.*\.IVR$',
+    'Video',
+],
+    [
+    '.*\.IVS$',
+    'Video',
+],
+    [
+    '.*\.IZZ$',
+    'Video',
+],
+    [
+    '.*\.IZZY$',
+    'Video',
+],
+    [
+    '.*\.M1PG$',
+    'Video',
+],
+    [
+    '.*\.M21$',
+    'Video',
+],
+    [
+    '.*\.M21$',
+    'Video',
+],
+    [
+    '.*\.M2P$',
+    'Video',
+],
+    [
+    '.*\.M2T$',
+    'Video',
+],
+    [
+    '.*\.M2TS$',
+    'Video',
+],
+    [
+    '.*\.M2V$',
+    'Video',
+],
+    [
+    '.*\.M4E$',
+    'Video',
+],
+    [
+    '.*\.M4U$',
+    'Video',
+],
+    [
+    '.*\.M4V$',
+    'Video',
+],
+    [
+    '.*\.MBF$',
+    'Video',
+],
+    [
+    '.*\.MBT$',
+    'Video',
+],
+    [
+    '.*\.MBV$',
+    'Video',
+],
+    [
+    '.*\.MJ2$',
+    'Video',
+],
+    [
+    '.*\.MJP$',
+    'Video',
+],
+    [
+    '.*\.MK3D$',
+    'Video',
+],
+    [
+    '.*\.MKV$',
+    'Video',
+],
+    [
+    '.*\.MNV$',
+    'Video',
+],
+    [
+    '.*\.MOCHA$',
+    'Video',
+],
+    [
+    '.*\.MOD$',
+    'Video',
+],
+    [
+    '.*\.MOFF$',
+    'Video',
+],
+    [
+    '.*\.MOI$',
+    'Video',
+],
+    [
+    '.*\.MOV$',
+    'Video',
+],
+    [
+    '.*\.MP21$',
+    'Video',
+],
+    [
+    '.*\.MP21$',
+    'Video',
+],
+    [
+    '.*\.MP4$',
+    'Video',
+],
+    [
+    '.*\.MP4V$',
+    'Video',
+],
+    [
+    '.*\.MPEG$',
+    'Video',
+],
+    [
+    '.*\.MPG$',
+    'Video',
+],
+    [
+    '.*\.MPG2$',
+    'Video',
+],
+    [
+    '.*\.MQV$',
+    'Video',
+],
+    [
+    '.*\.MSDVD$',
+    'Video',
+],
+    [
+    '.*\.MSWMM$',
+    'Video',
+],
+    [
+    '.*\.MTS$',
+    'Video',
+],
+    [
+    '.*\.MTV$',
+    'Video',
+],
+    [
+    '.*\.MVB$',
+    'Video',
+],
+    [
+    '.*\.MVP$',
+    'Video',
+],
+    [
+    '.*\.MXF$',
+    'Video',
+],
+    [
+    '.*\.MZT$',
+    'Video',
+],
+    [
+    '.*\.NSV$',
+    'Video',
+],
+    [
+    '.*\.OGV$',
+    'Video',
+],
+    [
+    '.*\.OGX$',
+    'Video',
+],
+    [
+    '.*\.PDS$',
+    'Video',
+],
+    [
+    '.*\.PGI$',
+    'Video',
+],
+    [
+    '.*\.PIV$',
+    'Video',
+],
+    [
+    '.*\.PLB$',
+    'Video',
+],
+    [
+    '.*\.PMF$',
+    'Video',
+],
+    [
+    '.*\.PNS$',
+    'Video',
+],
+    [
+    '.*\.PPJ$',
+    'Video',
+],
+    [
+    '.*\.PRPROJ$',
+    'Video',
+],
+    [
+    '.*\.PRTL$',
+    'Video',
+],
+    [
+    '.*\.PSH$',
+    'Video',
+],
+    [
+    '.*\.PVR$',
+    'Video',
+],
+    [
+    '.*\.PXV$',
+    'Video',
+],
+    [
+    '.*\.QT$',
+    'Video',
+],
+    [
+    '.*\.QTL$',
+    'Video',
+],
+    [
+    '.*\.R3D$',
+    'Video',
+],
+    [
+    '.*\.RATDVD$',
+    'Video',
+],
+    [
+    '.*\.RM$',
+    'Video',
+],
+    [
+    '.*\.RMS$',
+    'Video',
+],
+    [
+    '.*\.RMVB$',
+    'Video',
+],
+    [
+    '.*\.ROQ$',
+    'Video',
+],
+    [
+    '.*\.RPF$',
+    'Video',
+],
+    [
+    '.*\.RPL$',
+    'Video',
+],
+    [
+    '.*\.RUM$',
+    'Video',
+],
+    [
+    '.*\.RV$',
+    'Video',
+],
+    [
+    '.*\.SDV$',
+    'Video',
+],
+    [
+    '.*\.SFVIDCAP$',
+    'Video',
+],
+    [
+    '.*\.SLC$',
+    'Video',
+],
+    [
+    '.*\.SMK$',
+    'Video',
+],
+    [
+    '.*\.SPL$',
+    'Video',
+],
+    [
+    '.*\.SQZ$',
+    'Video',
+],
+    [
+    '.*\.SUB$',
+    'Video',
+],
+    [
+    '.*\.SVI$',
+    'Video',
+],
+    [
+    '.*\.SWF$',
+    'Video',
+],
+    [
+    '.*\.TDA3MT$',
+    'Video',
+],
+    [
+    '.*\.THM$',
+    'Video',
+],
+    [
+    '.*\.TIVO$',
+    'Video',
+],
+    [
+    '.*\.TOD$',
+    'Video',
+],
+    [
+    '.*\.TP0$',
+    'Video',
+],
+    [
+    '.*\.TRP$',
+    'Video',
+],
+    [
+    '.*\.TS$',
+    'Video',
+],
+    [
+    '.*\.UDP$',
+    'Video',
+],
+    [
+    '.*\.USM$',
+    'Video',
+],
+    [
+    '.*\.VCR$',
+    'Video',
+],
+    [
+    '.*\.VEG$',
+    'Video',
+],
+    [
+    '.*\.VFT$',
+    'Video',
+],
+    [
+    '.*\.VGZ$',
+    'Video',
+],
+    [
+    '.*\.VIEWLET$',
+    'Video',
+],
+    [
+    '.*\.VLAB$',
+    'Video',
+],
+    [
+    '.*\.VMB$',
+    'Video',
+],
+    [
+    '.*\.VOB$',
+    'Video',
+],
+    [
+    '.*\.VP6$',
+    'Video',
+],
+    [
+    '.*\.VP7$',
+    'Video',
+],
+    [
+    '.*\.VRO$',
+    'Video',
+],
+    [
+    '.*\.VSP$',
+    'Video',
+],
+    [
+    '.*\.VVF$',
+    'Video',
+],
+    [
+    '.*\.WD1$',
+    'Video',
+],
+    [
+    '.*\.WEBM$',
+    'Video',
+],
+    [
+    '.*\.WLMP$',
+    'Video',
+],
+    [
+    '.*\.WMMP$',
+    'Video',
+],
+    [
+    '.*\.WMV$',
+    'Video',
+],
+    [
+    '.*\.WP3$',
+    'Video',
+],
+    [
+    '.*\.WTV$',
+    'Video',
+],
+    [
+    '.*\.XFL$',
+    'Video',
+],
+    [
+    '.*\.XVID$',
+    'Video',
+],
+    [
+    '.*\.ZM1$',
+    'Video',
+],
+    [
+    '.*\.ZM2$',
+    'Video',
+],
+    [
+    '.*\.ZM3$',
+    'Video',
+],
+    [
+    '.*\.ZMV$',
+    'Video',
+],
+    [
+    '.*\.001$',
+    'Video',
+],
+    [
+    '.*\.113$',
+    'Video',
+],
+    [
+    '.*\.A03$',
+    'Video',
+],
+    [
+    '.*\.ABA$',
+    'Video',
+],
+    [
+    '.*\.ABBU$',
+    'Video',
+],
+    [
+    '.*\.AFP$',
+    'Video',
+],
+    [
+    '.*\.ALB$',
+    'Video',
+],
+    [
+    '.*\.AS4$',
+    'Video',
+],
+    [
+    '.*\.ASD$',
+    'Video',
+],
+    [
+    '.*\.AWB$',
+    'Video',
+],
+    [
+    '.*\.BAC$',
+    'Video',
+],
+    [
+    '.*\.BACKUPDB$',
+    'Video',
+],
+    [
+    '.*\.BAK$',
+    'Video',
+],
+    [
+    '.*\.BBB$',
+    'Video',
+],
+    [
+    '.*\.BCM$',
+    'Video',
+],
+    [
+    '.*\.BDB$',
+    'Video',
+],
+    [
+    '.*\.BDB$',
+    'Video',
+],
+    [
+    '.*\.BKC$',
+    'Video',
+],
+    [
+    '.*\.BKF$',
+    'Video',
+],
+    [
+    '.*\.BKS$',
+    'Video',
+],
+    [
+    '.*\.BMR$',
+    'Video',
+],
+    [
+    '.*\.BPA$',
+    'Video',
+],
+    [
+    '.*\.BR4$',
+    'Video',
+],
+    [
+    '.*\.BUP$',
+    'Video',
+],
+    [
+    '.*\.CCA$',
+    'Video',
+],
+    [
+    '.*\.CTX$',
+    'Video',
+],
+    [
+    '.*\.DBK$',
+    'Video',
+],
+    [
+    '.*\.DBK$',
+    'Video',
+],
+    [
+    '.*\.DCTMP$',
+    'Video',
+],
+    [
+    '.*\.DKB$',
+    'Video',
+],
+    [
+    '.*\.DL_$',
+    'Video',
+],
+    [
+    '.*\.DOV$',
+    'Video',
+],
+    [
+    '.*\.DTS$',
+    'Video',
+],
+    [
+    '.*\.DVD$',
+    'Video',
+],
+    [
+    '.*\.DVDMEDIA$',
+    'Video',
+],
+    [
+    '.*\.ECS$',
+    'Video',
+],
+    [
+    '.*\.FBC$',
+    'Video',
+],
+    [
+    '.*\.FBF$',
+    'Video',
+],
+    [
+    '.*\.FBK$',
+    'Video',
+],
+    [
+    '.*\.FBK$',
+    'Video',
+],
+    [
+    '.*\.FBW$',
+    'Video',
+],
+    [
+    '.*\.FUL$',
+    'Video',
+],
+    [
+    '.*\.GHO$',
+    'Video',
+],
+    [
+    '.*\.I01$',
+    'Video',
+],
+    [
+    '.*\.IPD$',
+    'Video',
+],
+    [
+    '.*\.IV2I$',
+    'Video',
+],
+    [
+    '.*\.JBK$',
+    'Video',
+],
+    [
+    '.*\.LAR$',
+    'Video',
+],
+    [
+    '.*\.LCB$',
+    'Video',
+],
+    [
+    '.*\.MDBACKUP$',
+    'Video',
+],
+    [
+    '.*\.MDDATA$',
+    'Video',
+],
+    [
+    '.*\.MDINFO$',
+    'Video',
+],
+    [
+    '.*\.MDO$',
+    'Video',
+],
+    [
+    '.*\.MPB$',
+    'Video',
+],
+    [
+    '.*\.NB7$',
+    'Video',
+],
+    [
+    '.*\.NBA$',
+    'Video',
+],
+    [
+    '.*\.NBF$',
+    'Video',
+],
+    [
+    '.*\.NBK$',
+    'Video',
+],
+    [
+    '.*\.NBU$',
+    'Video',
+],
+    [
+    '.*\.NFB$',
+    'Video',
+],
+    [
+    '.*\.NPF$',
+    'Video',
+],
+    [
+    '.*\.NRS$',
+    'Video',
+],
+    [
+    '.*\.OEB$',
+    'Video',
+],
+    [
+    '.*\.OLD$',
+    'Video',
+],
+    [
+    '.*\.ORI$',
+    'Video',
+],
+    [
+    '.*\.OYX$',
+    'Video',
+],
+    [
+    '.*\.PCV$',
+    'Video',
+],
+    [
+    '.*\.QBB$',
+    'Video',
+],
+    [
+    '.*\.QBK$',
+    'Video',
+],
+    [
+    '.*\.QBM$',
+    'Video',
+],
+    [
+    '.*\.QTCH$',
+    'Video',
+],
+    [
+    '.*\.R00$',
+    'Video',
+],
+    [
+    '.*\.RBC$',
+    'Video',
+],
+    [
+    '.*\.RBD$',
+    'Video',
+],
+    [
+    '.*\.RBK$',
+    'Video',
+],
+    [
+    '.*\.REV$',
+    'Video',
+],
+    [
+    '.*\.RRR$',
+    'Video',
+],
+    [
+    '.*\.SED$',
+    'Video',
+],
+    [
+    '.*\.SN1$',
+    'Video',
+],
+    [
+    '.*\.SN2$',
+    'Video',
+],
+    [
+    '.*\.SPK$',
+    'Video',
+],
+    [
+    '.*\.SRP$',
+    'Video',
+],
+    [
+    '.*\.STC$',
+    'Video',
+],
+    [
+    '.*\.TK2$',
+    'Video',
+],
+    [
+    '.*\.TLG$',
+    'Video',
+],
+    [
+    '.*\.UCI$',
+    'Video',
+],
+    [
+    '.*\.V2I$',
+    'Video',
+],
+    [
+    '.*\.VRB$',
+    'Video',
+],
+    [
+    '.*\.WBK$',
+    'Video',
+],
+    [
+    '.*\.XLK$',
+    'Video',
+],
+    [
+    '.*',
+    'Unsorted',
+],
+]
