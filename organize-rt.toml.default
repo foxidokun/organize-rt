@@ -3772,6 +3772,10 @@ rules = [
     'Documents',
 ],
     [
+    '.*\.PDF$',
+    'Documents',
+],
+    [
     '.*\.PFX$',
     'Documents',
 ],
@@ -4933,10 +4937,6 @@ rules = [
 ],
     [
     '.*\.PCX$',
-    'Images',
-],
-    [
-    '.*\.PDF$',
     'Images',
 ],
     [

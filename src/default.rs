@@ -950,6 +950,7 @@ pub fn rules(rules: &mut Vec<(String, String)>) {
     rules.push((r".*\.P7S$".to_string(), "Documents".to_string()));
     rules.push((r".*\.PAGES$".to_string(), "Documents".to_string()));
     rules.push((r".*\.PDG$".to_string(), "Documents".to_string()));
+    rules.push((r".*\.PDF$".to_string(), "Documents".to_string()));
     rules.push((r".*\.PFX$".to_string(), "Documents".to_string()));
     rules.push((r".*\.PJT$".to_string(), "Documents".to_string()));
     rules.push((r".*\.PM6$".to_string(), "Documents".to_string()));
@@ -1242,7 +1243,6 @@ pub fn rules(rules: &mut Vec<(String, String)>) {
     rules.push((r".*\.PCD$".to_string(), "Images".to_string()));
     rules.push((r".*\.PCT$".to_string(), "Images".to_string()));
     rules.push((r".*\.PCX$".to_string(), "Images".to_string()));
-    rules.push((r".*\.PDF$".to_string(), "Images".to_string()));
     rules.push((r".*\.PDN$".to_string(), "Images".to_string()));
     rules.push((r".*\.PEF$".to_string(), "Images".to_string()));
     rules.push((r".*\.PI2$".to_string(), "Images".to_string()));
