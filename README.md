@@ -37,7 +37,7 @@ $ makepkg -sri
 ## Fedora/CentOS
 Available in [COPR](https://copr.fedorainfracloud.org/coprs/atim/organize-rt/):
 ```
-sudo dnf enable atim/organize-rt -y
+sudo dnf copr enable atim/organize-rt -y
 sudo dnf install organize-rt
 ```
 
