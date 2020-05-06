@@ -34,6 +34,13 @@ $ git clone --depth=1 https://gitlab.com/FixFromDarkness/organize-rt.git
 $ makepkg -sri
 ```
 
+## Fedora/CentOS
+Available in [COPR](https://copr.fedorainfracloud.org/coprs/atim/organize-rt/):
+```
+sudo dnf enable atim/organize-rt -y
+sudo dnf install organize-rt
+```
+
 # Usage
 ```
 $ organize-rt --help
