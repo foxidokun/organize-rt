@@ -2,6 +2,7 @@ image: "rust:latest"
 
 stages:
  - test
+ - build
 
 test:
  stage: test
@@ -10,6 +11,18 @@ test:
   - cargo --version
   - cargo check
 
+build:
+  stage: build
+  only:
+    - tags
+    - master
+  script:
+    - cargo build --release --locked
+  artifacts:
+    paths:
+      - target/release/organize-rt
+
 cache:
   paths:
+    - cargo/
     - target/
