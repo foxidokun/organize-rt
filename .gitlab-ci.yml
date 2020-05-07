@@ -17,9 +17,12 @@ build:
     - tags
   script:
     - cargo build --release --locked
+    - mv target/release/organize-rt ./linux64
+    - cargo login $CARGO_LOGIN
+    - cargo publish
   artifacts:
     paths:
-      - target/release/organize-rt
+      - ./linux64
 
 cache:
   paths:

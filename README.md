@@ -44,11 +44,11 @@ sudo dnf install organize-rt
 # Usage
 ```
 $ organize-rt --help
-organize-rt 0.9.1
+organize-rt 1.0.0
 Tool for organizing files in garbage dirs like 'Downloads'
 
 USAGE:
-    organize-rt [FLAGS] --output <output> --source <source>
+    organize-rt [FLAGS] [OPTIONS] --output <output> --source <source>
 
 FLAGS:
         --dry-run      Prints where the file would move, but does not move
@@ -56,17 +56,28 @@ FLAGS:
     -H, --hidden       Include hidden files/directories
     -q, --quiet        Quiet run, empty output
     -r, --recursive
+    -u, --undo         Undo action (require log)
     -V, --version      Prints version information
     -v, --verbose      Show more info
 
 OPTIONS:
+        --log <log-path>     Path to save/load log [default: ./organize-rt.log]
     -o, --output <output>    Output directory
     -s, --source <source>    Directory to organize
 ```
 
 Recommended mode: `organize-rt -rH`
 
+When you run this program, __after all moves__ it will save its actions in log (--log option, default "./organize-rt.log").
+If you want to discard changes, run with --undo option. For example `organize-rt --undo --log ./badrun.log` will discard changes, saved in 
+badrun.log. Some important notes about undo:
+* It use absolute paths, so you can run it from anywhere.
+* Due to absolute paths, you can't undid changes if output dir was moved
+* It will skip errors (deleted files from output dir)
+* You can delete source directory, undo mode will restore it
+
 ## Example 
+Normal mode:
 ```
 $ organize-rt -s in -o out -rH --dry-run
 in/avi.avi -> out/Video/avi.avi
@@ -80,6 +91,19 @@ in/dir/image.png -> out/Images/image.png
 in/unsorted.norule -> out/Unsorted/unsorted.norule
 in/.hidden.conf -> out/Configuration/.hidden.conf
 in/mp3.mp3 -> out/Audio/mp3.mp3
+```
+
+Undo this action (# hide absolute path):
+```
+$ organize-rt --undo --dry-run
+#/out/Video/avi.avi -> #/in/avi.avi
+#/out/Compressed/compressed.tar.bz2 -> #/in/compressed.tar.bz2
+#/out/Audio/ogg.ogg -> #/in/ogg.ogg
+#/out/Configuration/conf.conf -> #/in/conf.conf
+#/out/ISO/archlinux.iso -> #/in/archlinux.iso
+#/out/Compressed/compressed.tar.gz -> #/in/compressed.tar.gz
+#/out/Unsorted/unsorted.norule -> #/in/unsorted.norule
+#/out/Audio/mp3.mp3 -> #/in/mp3.mp3
 ```
 
 ## Writing own rules

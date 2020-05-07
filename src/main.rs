@@ -1,193 +1,72 @@
-use std::path::{PathBuf, Path};
-use std::fs::{create_dir_all, rename, remove_dir};
+extern crate organize_rt;
+
+use std::process;
 use structopt::StructOpt;
-use confy;
-use serde::{Serialize, Deserialize};
-use walkdir::{WalkDir, DirEntry};
-use regex::{Regex, RegexBuilder};
-use indicatif::ProgressBar;
 use human_panic::setup_panic;
 
-mod default;
-
-#[derive(StructOpt)]
-#[doc(hidden)]
-///Tool for organizing files in garbage dirs like 'Downloads'. 
-struct Options {
-    #[structopt(short, long)]
-    recursive: bool,
-    
-    #[structopt(short="H", long)]
-    ///Include hidden files/directories
-    hidden: bool,
-    
-    #[structopt(short, long)]
-    ///Show more info
-    verbose: bool,
-    
-    #[structopt(short, long)]
-    ///Quiet run, empty output
-    quiet: bool,
+use organize_rt::{Options, CompiledRules, get_files, create_dirs, move_files, undo};
 
 
-    #[structopt(long="dry-run")]
-    ///Prints where the file would move, but does not move
-    dry_run: bool,
-
-    #[structopt(short, long, parse(from_os_str))]
-    ///Directory to organize
-    source: PathBuf,
-
-    #[structopt(short, long, parse(from_os_str))]
-    ///Output directory
-    output:  PathBuf
-
-}
-
-#[derive(Serialize, Deserialize)]
-struct RawRules {
-    rules: Vec<(String, String)>
-}
-
-impl Default for RawRules {
-    fn default() -> RawRules {
-        let mut rules = Vec::new();
-        default::rules(&mut rules);
-        RawRules {
-            rules
-        }
-    }
-}
-
-impl RawRules {
-    fn compile(self, output_dir: &PathBuf) -> CompiledRules {
-        let mut compiled_rules: Vec<(Regex, PathBuf)> = Vec::new();
-        for (regex, dir_name) in self.rules.into_iter() {
-            let regex = RegexBuilder::new(regex.as_str()).case_insensitive(true).build().unwrap();
-            let mut path = (*output_dir).clone();
-            path.push(dir_name);
-            compiled_rules.push((regex, path));
-        }
-
-        CompiledRules{
-            rules: compiled_rules
-        }
-    }
-}
-
-
-struct CompiledRules {
-    rules: Vec<(Regex, PathBuf)>
-}
-
-impl CompiledRules {
-    fn iter(&self) -> std::slice::Iter<(Regex, PathBuf)> {
-        self.rules.iter()
-    }
-}
-
-fn is_hidden(entry: &DirEntry) -> bool {
-    entry.path()
-         .to_str()
-         .map(|s| s.contains("/."))
-         .unwrap_or(false)
-}
 
 fn main() {
+    // --INITIALIZATION--
     setup_panic!();
-    let options = Options::from_args();
+    let mut options = Options::from_args();
 
     //Don't use quiet with verbose flag
     if options.quiet && options.verbose {
         println!("Can't use quiet and verbose flags together");
-        return ();
+        process::exit(1);
     }
 
+    if !options.undo {
+        normal_mode(&mut options);
+    } else {
+        undo_mode(&options);
+    }
+      
+}
 
-    let rules: RawRules = confy::load("organize-rt").unwrap();
+fn undo_mode(options: &Options) {
+    if !options.log_path.exists() {
+        println!("Wrong log path");
+        process::exit(1);
+    }
+    undo(&options);
+}
 
-    if !options.source.is_dir()  {
-        println!("Wrong source directory");
-        return ();
-    }
-    
-    if options.verbose {
-        println!("Compiling rules...");
-    }
-    let rules = rules.compile(&options.output);
-    if options.verbose {
-        println!("Rules compiled");
+fn normal_mode(options: &mut Options) {
+    //Resolve & check input dir
+    options.resolve();
+    if !options.source.is_dir() {
+        println!("Wrong source dir");
+        process::exit(1);
     }
 
-    //Walker setup
-    let mut walker = WalkDir::new(&options.source);
-    if !options.recursive {
-        walker = walker.max_depth(1);
-    }
-    let walker = walker.into_iter().filter_map(|e| e.ok())
-        .filter(|e| (options.hidden || !is_hidden(e)) && !e.file_type().is_dir());
-    
+    //Load rules or panic
+    let rules = match CompiledRules::load(&options) {
+        Ok(rules) => rules,
+        Err(_) => {
+            println!("Can't load rules, please check config file. To restore default just remove it");
+            process::exit(1);
+        }
+    };
 
     // Get files to move
-    let mut files: Vec<PathBuf> = Vec::new();
-    for entry in walker
-    {
-            files.push(entry.into_path());
-    }
+    let files = get_files(options.hidden, options.recursive, &options.source);
     
-    if options.verbose {
-        println!("Counted {} files", files.len());
-    }
     
+    options.verbose_print(format!("Counted {} files", files.len()).as_str());
 
     //Creating dirs to move
-    if options.verbose && !options.dry_run {
-        println!("Creating dirs...");
-    }
 
     if !options.dry_run {
-        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Audio"))).unwrap();
-        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Compressed"))).unwrap();
-        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Garbage"))).unwrap();
-        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Downloads"))).unwrap();
-        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Code"))).unwrap();
-        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Documents"))).unwrap();
-        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Images"))).unwrap();
-        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/ISO"))).unwrap();
-        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Configuration"))).unwrap();
-        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Encrypted"))).unwrap();
-        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Video"))).unwrap();
-        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/Unsorted"))).unwrap();
-        create_dir_all(Path::new(&(options.output.to_str().unwrap().to_owned() + "/REMOVE"))).unwrap();
+        if let Err(e) = create_dirs(&options) {
+            println!("Failed to create output dirs");
+            panic!("{}", e);
+        }
     }
 
     //Move files
-    let progressbar = ProgressBar::new(files.len() as u64);
-    for file in files {
-        for (regex, out_dir) in rules.iter() {
-            if regex.is_match(&file.file_name().unwrap().to_str().unwrap()) {
-                let mut file_out = out_dir.clone();
-                file_out.push(file.file_name().unwrap());
-                if !options.dry_run {
-                    rename(&file, &file_out).unwrap();
-                } else if !options.quiet {
-                    println!("{} -> {}", file.to_str().unwrap(), file_out.to_str().unwrap());
-                }
-                break;
-            }
-        }
-        if !options.quiet  && !options.dry_run {
-        progressbar.inc(1);
-        }
-    }
-    
-
-    //Remove `REMOVE` dir
-    if options.verbose && !options.dry_run {
-        println!("Removing REMOVE dir...");
-    }
-    
-    if !options.dry_run {
-        remove_dir(options.output.to_str().unwrap().to_owned() + "/REMOVE").unwrap();
-    }
+    move_files(&files, &rules, &options);
 }
