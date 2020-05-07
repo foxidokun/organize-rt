@@ -1,6 +1,6 @@
 [package]
 name = "organize-rt"
-version = "0.9.1"
+version = "1.0.0"
 authors = ["FixFromDarkness <fixfromdarkness@cock.li>"]
 edition = "2018"
 description = "Organize files based on regex (file extensions default)"
