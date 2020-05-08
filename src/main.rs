@@ -53,9 +53,9 @@ fn normal_mode(options: &mut Options) {
     };
 
     // Get files to move
+
+    options.verbose_print("Counting files...");
     let files = get_files(options.hidden, options.recursive, &options.source);
-    
-    
     options.verbose_print(format!("Counted {} files", files.len()).as_str());
 
     //Creating dirs to move

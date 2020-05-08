@@ -68,6 +68,9 @@ OPTIONS:
 
 Recommended mode: `organize-rt -rH`
 
+
+If you have several file with the same name, program will save them like `file`, `file.COPY<id>`, `file.COPY<id>`..., where `id` isn't a copy number, but a unique number. Also, program will skip all file errors like `Bad permissions` and print about them (if --quiet flag isn't specified). 
+
 When you run this program, __after all moves__ it will save its actions in log (--log option, default "./organize-rt.log").
 If you want to discard changes, run with --undo option. For example `organize-rt --undo --log ./badrun.log` will discard changes, saved in 
 badrun.log. Some important notes about undo:

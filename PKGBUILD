@@ -1,7 +1,7 @@
 # Maintainer: FixFromDarkness <fixfromdarkness@cock.li>
 pkgname=organize-rt
-pkgver=1.0.0
-pkgrel=3
+pkgver=1.0.1
+pkgrel=4
 epoch=
 pkgdesc="Organize file based on regex"
 arch=('any')
