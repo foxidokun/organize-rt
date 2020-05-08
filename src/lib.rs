@@ -199,7 +199,9 @@ pub fn move_files(files: &Vec<PathBuf>, rules: &CompiledRules, options: &Options
     let progressbar = ProgressBar::new(files.len() as u64);
     let mut actions: Vec<Move> = Vec::new();
 
+    let mut id: u32 = 0;
     for file in files {
+        id += 1;
         for (regex, out_dir) in rules.iter() {
             if regex.is_match(&file.file_name().unwrap().to_str().unwrap()) {
                 let mut file_out = out_dir.clone();
@@ -207,9 +209,22 @@ pub fn move_files(files: &Vec<PathBuf>, rules: &CompiledRules, options: &Options
 
                 if !options.dry_run {
                     let file = canonicalize(&file).unwrap();
-                    rename(&file, &file_out).unwrap();
-                    let file_out = canonicalize(&file_out).unwrap();
-                    actions.push(Move::new(file, file_out));
+
+                    //Check if file already exists
+                    if file_out.exists() {
+                        //and change it name
+                        file_out.pop();
+                        file_out.push(format!("{}.COPY{}", file.file_name().unwrap().to_str().unwrap(), id));
+                    }
+
+                    //Skip errors
+                    if let Err(e) = rename(&file, &file_out) {
+                        options.default_print(format!("Failed to move file {} with error {}", file.to_str().unwrap(), e).as_str());
+                    } else {
+                        let file_out = canonicalize(&file_out).unwrap();
+                        actions.push(Move::new(file, file_out));
+                    }
+
                 } else{
                     options.default_print(format!("{} -> {}", file.to_str().unwrap(), file_out.to_str().unwrap()).as_str());
                 }
