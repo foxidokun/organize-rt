@@ -19,10 +19,10 @@ fn main() {
         process::exit(1);
     }
 
-    if !options.undo {
-        normal_mode(&mut options);
-    } else {
+    if options.undo {
         undo_mode(&options);
+    } else {
+        normal_mode(&mut options);
     }
       
 }
@@ -44,13 +44,11 @@ fn normal_mode(options: &mut Options) {
     }
 
     //Load rules or panic
-    let rules = match CompiledRules::load(&options) {
-        Ok(rules) => rules,
-        Err(_) => {
-            println!("Can't load rules, please check config file. To restore default just remove it");
-            process::exit(1);
-        }
-    };
+    let rules = if let Ok(rules) = CompiledRules::load(&options) { rules } else {
+        println!("Can't load rules, please check config file. To restore default just remove it");
+        process::exit(1);
+     };
+
 
     // Get files to move
 
