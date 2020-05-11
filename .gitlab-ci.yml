@@ -9,7 +9,8 @@ test:
  script:
   - rustc --version
   - cargo --version
-  - cargo check
+  - rustup component add clippy
+  - cargo clippy -- -W clippy::pedantic -W clippy::all -W clippy::cargo
 
 build:
   stage: build

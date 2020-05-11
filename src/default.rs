@@ -1,6 +1,10 @@
+#[allow(clippy::too_many_lines)] 
+/*
+Allow, because this function just store defaults values.
+A lot of default values
+*/
 pub fn rules(rules: &mut Vec<(String, String)>) {
-    //It's FUCKING HELL
-
+    //It's hell, don't read it. It's just store default rules
 
     rules.push((r".*\.3GA$".to_string(), "Audio".to_string()));
     rules.push((r".*\.AA$".to_string(), "Audio".to_string()));

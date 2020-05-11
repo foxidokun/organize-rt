@@ -1,8 +1,11 @@
+#![allow(clippy::must_use_candidate)]
+#![allow(clippy::missing_errors_doc)] //Don't have docs
+
+
 use std::path::{PathBuf, Path};
 use std::fs::{create_dir_all, rename, remove_dir_all, canonicalize, File};
 use std::io::{Write, Read};
 use structopt::StructOpt;
-use confy;
 use serde::{Serialize, Deserialize};
 use walkdir::{WalkDir, DirEntry};
 use indicatif::ProgressBar;
@@ -13,6 +16,7 @@ mod default;
 
 // --CLI ARGS SECTION--
 #[derive(StructOpt)]
+#[allow(clippy::struct_excessive_bools)] //Allow, because all bools are flags and I need them
 ///Tool for organizing files in garbage dirs like 'Downloads'. 
 pub struct Options {
     #[structopt(short, long)]
@@ -98,7 +102,7 @@ impl Default for RawRules {
 impl RawRules {
     fn compile(self, output_dir: &PathBuf) -> Result<CompiledRules, Box<dyn std::error::Error>> {
         let mut compiled_rules: Vec<(Regex, PathBuf)> = Vec::new();
-        for (regex, dir_name) in self.rules.into_iter() {
+        for (regex, dir_name) in self.rules {
             let regex = RegexBuilder::new(regex.as_str()).case_insensitive(true).build()?;
             let mut path = (*output_dir).clone();
             path.push(dir_name);
@@ -152,7 +156,7 @@ pub fn get_files(hidden: bool, recursive: bool, source: &PathBuf) -> Vec<PathBuf
     if !recursive {
         walker = walker.max_depth(1);
     }
-    let walker = walker.into_iter().filter_map(|e| e.ok())
+    let walker = walker.into_iter().filter_map(Result::ok)
         .filter(|e| (hidden || !is_hidden(e)) && !e.file_type().is_dir());
 
 
@@ -170,8 +174,8 @@ pub fn get_files(hidden: bool, recursive: bool, source: &PathBuf) -> Vec<PathBuf
 fn is_hidden(entry: &DirEntry) -> bool {
     entry.path()
          .to_str()
-         .map(|s| s.contains("/."))
-         .unwrap_or(false)
+         .map_or(false, |s| s.contains("/."))
+
 }
 
 pub fn create_dirs(options: &Options) -> Result<(), Box<dyn std::error::Error>>{
@@ -195,19 +199,21 @@ pub fn create_dirs(options: &Options) -> Result<(), Box<dyn std::error::Error>>{
     Ok(())
 }
 
-pub fn move_files(files: &Vec<PathBuf>, rules: &CompiledRules, options: &Options) {
+pub fn move_files(files: &[PathBuf], rules: &CompiledRules, options: &Options) {
     let progressbar = ProgressBar::new(files.len() as u64);
     let mut actions: Vec<Move> = Vec::new();
 
-    let mut id: u32 = 0;
-    for file in files {
-        id += 1;
+    for (id, file) in files.iter().enumerate() {
         for (regex, out_dir) in rules.iter() {
             if regex.is_match(&file.file_name().unwrap().to_str().unwrap()) {
                 let mut file_out = out_dir.clone();
                 file_out.push(file.file_name().unwrap());
 
-                if !options.dry_run {
+                if options.dry_run {
+
+                    options.default_print(format!("{} -> {}", file.to_str().unwrap(), file_out.to_str().unwrap()).as_str());
+
+                } else {
                     let file = canonicalize(&file).unwrap();
 
                     //Check if file already exists
@@ -224,9 +230,6 @@ pub fn move_files(files: &Vec<PathBuf>, rules: &CompiledRules, options: &Options
                         let file_out = canonicalize(&file_out).unwrap();
                         actions.push(Move::new(file, file_out));
                     }
-
-                } else{
-                    options.default_print(format!("{} -> {}", file.to_str().unwrap(), file_out.to_str().unwrap()).as_str());
                 }
 
                 break;
@@ -248,7 +251,7 @@ pub fn move_files(files: &Vec<PathBuf>, rules: &CompiledRules, options: &Options
 
     // - Write log
     let mut file = File::create(&options.log_path).unwrap();
-    file.write(serialised_log.as_bytes()).unwrap();
+    file.write_all(serialised_log.as_bytes()).unwrap();
 
 
     //Delete `REMOVE` dir
@@ -272,13 +275,12 @@ pub fn undo(options: &Options) {
         let mut from_dir = action.from.clone();
         from_dir.pop();
         create_dir_all(from_dir).unwrap();
-        if !options.dry_run {
-            if let Err(e) = rename(&action.to, &action.from) {
-                options.default_print(format!("Failed to move {} back to {} with error '{}' (skipped it)", 
-                    action.to.to_str().unwrap(), action.from.to_str().unwrap(), e).as_str());
-            }
-        } else {
+        if options.dry_run {
             options.default_print(format!("{} -> {}", action.to.to_str().unwrap(), action.from.to_str().unwrap()).as_str());
+        } else if let Err(e) = rename(&action.to, &action.from) {
+            options.default_print(format!("Failed to move {} back to {} with error '{}' (skipped it)", 
+                action.to.to_str().unwrap(), action.from.to_str().unwrap(), e).as_str());
+            
         }
     }
 }
