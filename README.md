@@ -127,5 +127,5 @@ where OUTPUT_DIR is --output option.
 # Like it?
 Star this repo, please.
 
-# Bad code?
-Waiting for your pull request or issue
+# Project status
+The project is alive, but I have no ideas for new functionality. Waiting for your pull request, issue or email, if you don't have GitLab account.
