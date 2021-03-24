@@ -27,7 +27,10 @@ After compiling, you can use binary `./target/release/organize-rt`. For example,
 
 Download binaries from GitLab release section.
 
-## Arch Linux
+## Arch Linux (stable version)
+Use [package from AUR](https://aur.archlinux.org/packages/organize-rt/)
+
+## Arch Linux (git version)
 Clone repo and use makepkg:
 ```bash
 $ git clone --depth=1 https://gitlab.com/FixFromDarkness/organize-rt.git
